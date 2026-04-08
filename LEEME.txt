@@ -1,0 +1,15 @@
+Carpeta lista para subir a cualquier hosting (Netlify, Firebase, tu servidor, etc.).
+Generada con: flutter build web --release y copia de build/web.
+
+Probar en la PC (hace falta un servidor HTTP; no abras solo index.html con doble clic):
+  PowerShell, dentro de esta carpeta:
+    python -m http.server 8080
+  Luego en el navegador: http://localhost:8080
+
+En el iPhone: subí esta carpeta al hosting y abrí la URL en Safari; podés "Añadir a pantalla de inicio".
+
+Nota: en web el catálogo viene del JSON embebido; los cambios en "Productos" no se guardan entre sesiones como en la app Android.
+
+Para regenerar esta carpeta desde el proyecto Flutter:
+  flutter build web --release
+  (y volver a copiar build/web aquí o ejecutar el script del proyecto si se agrega uno)

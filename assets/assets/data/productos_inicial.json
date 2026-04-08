@@ -1,0 +1,6347 @@
+[
+  {
+    "id": "prod-0001",
+    "nombre": "ABROCHADOR PINZA CHICA 10/50 OLAMI 500 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0002",
+    "nombre": "ABROCHADORA PINZA GRANDE 24/6 DL 501 OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0003",
+    "nombre": "ACUARELA COLORES Y PINCEL PALETTE (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0004",
+    "nombre": "ACUARELA FIILGO 12COLORES 1 PALETA (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0005",
+    "nombre": "ACUARELA OLAMI ESSETIAL KEYROAD COLORES Y PINCEL (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0006",
+    "nombre": "ACUARELA X12 CON PINCEL (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0007",
+    "nombre": "AGUA CIMES SIN TACC 600 CC (6)",
+    "proveedor": "CIMES"
+  },
+  {
+    "id": "prod-0008",
+    "nombre": "AGUA MANAOS 600ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0009",
+    "nombre": "AGUA SIERRA DE LOS PADRES (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0010",
+    "nombre": "AGUA VALLE DEL SOL 500 ML (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0011",
+    "nombre": "ALF. CAPITAN D ESPACIO SIMPLE BLANCO(36)",
+    "proveedor": "NOSE"
+  },
+  {
+    "id": "prod-0012",
+    "nombre": "ALF. CAPITAN D ESPACIO SIMPLE NEGRO(36)",
+    "proveedor": "NOSE"
+  },
+  {
+    "id": "prod-0013",
+    "nombre": "ALFAJOR AGUILA CLASICO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0014",
+    "nombre": "ALFAJOR AGUILA DORADO (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0015",
+    "nombre": "ALFAJOR AGUILA MINITORTA BROWNIE (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0016",
+    "nombre": "ALFAJOR AGUILA MINITORTA COCO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0017",
+    "nombre": "ALFAJOR ALFACHURRO SIN TACC (22)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0018",
+    "nombre": "Alfajor Barcelona Blanco (18)",
+    "proveedor": "BARCELONA"
+  },
+  {
+    "id": "prod-0019",
+    "nombre": "Alfajor Barcelona Negro (18)",
+    "proveedor": "BARCELONA"
+  },
+  {
+    "id": "prod-0020",
+    "nombre": "ALFAJOR BARRIGON BLANCO 70GRS (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0021",
+    "nombre": "ALFAJOR BARRIGON NEGRO 100GRS (7)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0022",
+    "nombre": "ALFAJOR BARRIGON NEGRO 70GRS (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0023",
+    "nombre": "ALFAJOR BON O BON SIMPLE BLANCO (40)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0024",
+    "nombre": "ALFAJOR BON O BON SIMPLE NEGRO (40)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0025",
+    "nombre": "ALFAJOR BON O BON TRIPLE BLANCO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0026",
+    "nombre": "ALFAJOR BON O BON TRIPLE NEGRO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0027",
+    "nombre": "ALFAJOR CAPITAN DEL ESPACIO TRIPLE (24)",
+    "proveedor": "NOSE"
+  },
+  {
+    "id": "prod-0028",
+    "nombre": "ALFAJOR CHOCOARROZ PISTACHO (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0029",
+    "nombre": "ALFAJOR CHOCOTORTA TRIPLE (21)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0030",
+    "nombre": "ALFAJOR CLOFLER CHOCO CREAMY (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0031",
+    "nombre": "Alfajor Coffler Block triple (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0032",
+    "nombre": "ALFAJOR DE MAICENA FARABUTE (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0033",
+    "nombre": "ALFAJOR DUBAI BLANCO PISTACHO SIN TACC (20)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0034",
+    "nombre": "ALFAJOR DUBAI NEGRO PISTACHO SIN TACC (22)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0035",
+    "nombre": "ALFAJOR ELIXIR BLANCO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0036",
+    "nombre": "ALFAJOR ELIXIR NEGRO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0037",
+    "nombre": "ALFAJOR FANTOCHE MINI XS BLANCO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0038",
+    "nombre": "ALFAJOR FANTOCHE MINI XS NEGRO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0039",
+    "nombre": "ALFAJOR FANTOCHE TRIPLE BLANCO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0040",
+    "nombre": "ALFAJOR FANTOCHE TRIPLE NEGRO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0041",
+    "nombre": "ALFAJOR FULBITO BLACK (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0042",
+    "nombre": "ALFAJOR FULBITO CHOCOLATE (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0043",
+    "nombre": "ALFAJOR FULBITO MANI (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0044",
+    "nombre": "ALFAJOR GUACHO BLANCO (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0045",
+    "nombre": "ALFAJOR GUACHO NEGRO (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0046",
+    "nombre": "ALFAJOR Guaymallen Oro (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0047",
+    "nombre": "ALFAJOR GUAYMALLEN PLATINO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0048",
+    "nombre": "ALFAJOR GUAYMALLEN SIMPLE BLANCO (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0049",
+    "nombre": "ALFAJOR GUAYMALLEN SIMPLE FRUTA (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0050",
+    "nombre": "ALFAJOR GUAYMALLEN SIMPLE NEGRO (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0051",
+    "nombre": "ALFAJOR GUAYMALLEN TRIPLE BLANCO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0052",
+    "nombre": "ALFAJOR GUAYMALLEN TRIPLE FRUTA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0053",
+    "nombre": "ALFAJOR GUAYMALLEN TRIPLE NEGRO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0054",
+    "nombre": "ALFAJOR GULA BLANCO (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0055",
+    "nombre": "ALFAJOR GULA COMBINADO (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0056",
+    "nombre": "ALFAJOR GULA NEGRO (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0057",
+    "nombre": "ALFAJOR HAMLET (56)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0058",
+    "nombre": "ALFAJOR JORGELIN BLANCO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0059",
+    "nombre": "ALFAJOR JORGELIN NEGRO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0060",
+    "nombre": "ALFAJOR JORGITO BLANCO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0061",
+    "nombre": "ALFAJOR JORGITO NEGRO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0062",
+    "nombre": "ALFAJOR JORGITO SIN TACC (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0063",
+    "nombre": "ALFAJOR MARADONA (24)",
+    "proveedor": "NOSE"
+  },
+  {
+    "id": "prod-0064",
+    "nombre": "ALFAJOR MARLEY BLANCO (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0065",
+    "nombre": "ALFAJOR MARLEY BLANCO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0066",
+    "nombre": "ALFAJOR MARLEY NEGRO (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0067",
+    "nombre": "ALFAJOR MARLEY NEGRO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0068",
+    "nombre": "ALFAJOR MILKA (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0069",
+    "nombre": "ALFAJOR MILKA MOUSE TRIPLE NEGRO (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0070",
+    "nombre": "ALFAJOR MINI COLORES CAST. DULCE X5U (1)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0071",
+    "nombre": "ALFAJOR MINITORTA AGUILA BLANCO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0072",
+    "nombre": "ALFAJOR OREO TRIPLE (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0073",
+    "nombre": "ALFAJOR PEPITO TRIPLE (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0074",
+    "nombre": "ALFAJOR RASTA BLANCO (18)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0075",
+    "nombre": "ALFAJOR RASTA MAICENA (14)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0076",
+    "nombre": "ALFAJOR RASTA NEGRO (18)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0077",
+    "nombre": "ALFAJOR RASTA TRICOLOR (14)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0078",
+    "nombre": "ALFAJOR RED VELVET SIN TACC (22)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0079",
+    "nombre": "ALFAJOR SALCHICHON JUANA BLANCO (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0080",
+    "nombre": "ALFAJOR SALCHICHON JUANA MERENGUE (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0081",
+    "nombre": "ALFAJOR SALCHICHON JUANA NEGRO (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0082",
+    "nombre": "ALFAJOR SHOT TRIPLE (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0083",
+    "nombre": "Alfajor Simple SUSCHEN 45grs (40)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0084",
+    "nombre": "ALFAJOR SUPER CHOCOARROZ DDL (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0085",
+    "nombre": "ALFAJOR SUSCHEN SIMPLE BLANCO 45GRS (40)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0086",
+    "nombre": "ALFAJOR SUSCHEN SIMPLE NEGRO 45GRS (40)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0087",
+    "nombre": "ALFAJOR TODDY (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0088",
+    "nombre": "ALFAJOR TOFI BLANCO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0089",
+    "nombre": "Alfajor Tofi Triple 85 grs (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0090",
+    "nombre": "Alfajor Triple Fantoche DAY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0091",
+    "nombre": "Alfajor Triple Fantoche DAY Y NIGHT (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0092",
+    "nombre": "Alfajor Triple Fantoche NIGHT (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0093",
+    "nombre": "ALFAJOR TRIPLE MILKA OREO (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0094",
+    "nombre": "Alfajor Triple SUSCHEN 60grs (24)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0095",
+    "nombre": "ALFAJOR TRIPLE SUSCHEN 60GRS BLANCO (24)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0096",
+    "nombre": "ALFAJOR TRIPLE SUSCHEN 60GRS NEGRO (24)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0097",
+    "nombre": "ALFAJOR TRIPLE TOFI BLANCO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0098",
+    "nombre": "ALFAJOR TRIPLE TOFI NEGRO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0099",
+    "nombre": "ALFAJOR VIMAR SIMPLE NEGRO/BLANCO (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0100",
+    "nombre": "ALFAJORCITO BON O BON (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0101",
+    "nombre": "AQUARIUS MANZANA 500 ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0102",
+    "nombre": "AQUARIUS PERA 500 ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0103",
+    "nombre": "AQUARIUS POMELO 500 ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0104",
+    "nombre": "AQUARIUS POMELO ROSADO 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0105",
+    "nombre": "AQUARIUS UVA 500 ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0106",
+    "nombre": "AQUARIUS UVA VERDE 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0107",
+    "nombre": "ARCOR MILK 12GRS (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0108",
+    "nombre": "AZUKITA (50)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0109",
+    "nombre": "BAGGIO DE LITRO (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0110",
+    "nombre": "BAGGIO DE LITRO MANZANA (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0111",
+    "nombre": "BAGGIO DE LITRO MULTIFRUTA (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0112",
+    "nombre": "BAGGIO DE LITRO NARAJA (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0113",
+    "nombre": "BAGGIO MANZANA 200ML (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0114",
+    "nombre": "BAGGIO MANZANA MINI 125 ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONOD"
+  },
+  {
+    "id": "prod-0115",
+    "nombre": "BAGGIO MINI 125 ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONOD"
+  },
+  {
+    "id": "prod-0116",
+    "nombre": "BAGGIO MULTIFRUTA 200ML (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0117",
+    "nombre": "BAGGIO MULTIFRUTA MINI 125 ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0118",
+    "nombre": "BAGGIO NARANJA 200ML (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0119",
+    "nombre": "BAGGIO NARANJA MINI 125 ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0120",
+    "nombre": "Bananita Dolca 14 grs (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0121",
+    "nombre": "BANDITAS ELASTICAS X 1KG (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0122",
+    "nombre": "BARRA CHOCOLINAS COFLER (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0123",
+    "nombre": "BARRA COFLER AVELLANAS (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0124",
+    "nombre": "BARRA COFLER CHOCOLINAS (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0125",
+    "nombre": "BARRA CRUDDA ARANDANO Y NUEZ (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0126",
+    "nombre": "BARRA CRUDDA AVELLANA Y CHOCOLATE (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0127",
+    "nombre": "BARRA CRUDDA BANANA TOFFE (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0128",
+    "nombre": "BARRA CRUDDA BROWNIE (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0129",
+    "nombre": "BARRA CRUDDA COCO Y CHOCOLATE (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0130",
+    "nombre": "BARRA CRUDDA PASTA MANI PEANUT CARAMEL (10)",
+    "proveedor": "SNACK"
+  },
+  {
+    "id": "prod-0131",
+    "nombre": "BARRA DE CEREAL MUECA (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0132",
+    "nombre": "BARRA DE CEREAL MUECA CACAO Y AVELL (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0133",
+    "nombre": "BARRA DE CEREAL MUECA CACAO Y CHOCO (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0134",
+    "nombre": "BARRA DE CEREAL MUECA PASAS Y ARAND (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0135",
+    "nombre": "BARRA DE COCO COFLER (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0136",
+    "nombre": "BARRA DE MANI COFLER (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0137",
+    "nombre": "BARRA FORT FRUTILLA Y MANZANA LIGHT (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0138",
+    "nombre": "BARRA FORT MANZANA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0139",
+    "nombre": "BARRA INTEGRA (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0140",
+    "nombre": "BARRA INTEGRA ALMENDRA Y NUEZ. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0141",
+    "nombre": "BARRA INTEGRA AVENA CACAO Y CHOCO. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0142",
+    "nombre": "BARRA INTEGRA AVENA CAJU Y ARAN. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0143",
+    "nombre": "BARRA INTEGRA AVENA GIRASOL Y ARAN. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0144",
+    "nombre": "BARRA INTEGRA AVENA Y BANANA (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0145",
+    "nombre": "BARRA INTEGRA BASE CHOCO MANI Y ARAN. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0146",
+    "nombre": "BARRA INTEGRA MIX CHOCO. MANI Y ARAND. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0147",
+    "nombre": "BARRA INTEGRA PROTEICA MANI ARAND. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0148",
+    "nombre": "BARRA INTEGRA PROTEICA MANI CHOCO. (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0149",
+    "nombre": "BARRA INTEGRA SEMILLA Y CHOCOL SIN TACC(10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0150",
+    "nombre": "BARRA MANI COFLER BLOCK (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0151",
+    "nombre": "BARRA RAPTOR CHOCOLATE CON AVELLANA (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0152",
+    "nombre": "BARRA RAPTOR COOKIES Y CREAM (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0153",
+    "nombre": "BARRA RAPTOR CREMA DE MANI (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0154",
+    "nombre": "BARRA ROCKLETS (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0155",
+    "nombre": "BARRITA CEREAL FORT (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0156",
+    "nombre": "BARRITA CEREAL FORT 19grs LADY (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0157",
+    "nombre": "BARRITA CEREAL FORT ANANA Y ALM. (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0158",
+    "nombre": "BARRITA CEREAL FORT CAJA ROJA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0159",
+    "nombre": "BARRITA CEREAL FORT CHOCOLATE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0160",
+    "nombre": "BARRITA CEREAL FORT FRUTILLA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0161",
+    "nombre": "BARRITA CEREAL FORT FRUTOS ROJOS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0162",
+    "nombre": "BARRITA CEREAL FORT MAZANA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0163",
+    "nombre": "BARRITA CEREAL MIX (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0164",
+    "nombre": "BARRITA CEREAL MIX FRUTILLA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0165",
+    "nombre": "BARRITA CEREAL MIX FRUTILLA LIGHT (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0166",
+    "nombre": "BARRITA CEREAL MIX MANZANA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0167",
+    "nombre": "BARRITA CEREAL MIX YOGURT FRUTILLA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0168",
+    "nombre": "BARRITA COFLER AVELLANA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0169",
+    "nombre": "BARRITA COFLER DDL (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0170",
+    "nombre": "BARRITA COFLER YOGURT FRUTILLA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0171",
+    "nombre": "Barrita Kinder 21gr MAXI (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0172",
+    "nombre": "BARRITA MIX CEREAL ORIGINAL (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0173",
+    "nombre": "BARRITA TODDY CHOCOMIX (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0174",
+    "nombre": "BARRTIAS CEREAL FLOW AVELL. MIEL. ARAN.(20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0175",
+    "nombre": "BARRTIAS CEREAL FLOW CHIPS Y ALM. (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0176",
+    "nombre": "BARRTIAS CEREAL FLOW CHOCOLATE (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0177",
+    "nombre": "BARRTIAS CEREAL FLOW F. DEL BOSQUE (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0178",
+    "nombre": "BARRTIAS CEREAL FLOW MANZANA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0179",
+    "nombre": "BARRTIAS CEREAL FLOW MIX DE FRUTAS (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0180",
+    "nombre": "BARRTIAS CEREAL FLOW PURO CACAO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0181",
+    "nombre": "BATATAS 63GRS GOOD SHOW (12)",
+    "proveedor": "OK"
+  },
+  {
+    "id": "prod-0182",
+    "nombre": "BIZCOCHITOS 9 DE ORO AGRIDULCES (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0183",
+    "nombre": "BIZCOCHITOS 9 DE ORO AZUCARADOS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0184",
+    "nombre": "BIZCOCHITOS 9 DE ORO CLASICOS 200 GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0185",
+    "nombre": "BIZCOCHITOS JORGITO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0186",
+    "nombre": "BIZCOCHITOS MATEROS FANTOCHE 200 GR (15)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0187",
+    "nombre": "BLISTER CHUPETIN BABY DOLL ACIDO POWER (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0188",
+    "nombre": "BLISTER CHUPETIN BABY DOLL MONSTER (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0189",
+    "nombre": "BLISTER DE HOAS CANSON ÉXITO N3 BLANCO X 8 HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0190",
+    "nombre": "BLISTER DE HOJAS COLOR CANSON ÉXITO N3 X6HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0191",
+    "nombre": "BLOCK DIBUJO BLANCO  TRUNFANTE 20 HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0192",
+    "nombre": "BLOCK DIBUJO COLORES TRUNFANTE 20 HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0193",
+    "nombre": "BOCADITO FANTOCHE DDL (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0194",
+    "nombre": "BOCADITO MERENCOA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0195",
+    "nombre": "BOCADITO NEVARES DDL (15)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0196",
+    "nombre": "BOCADITO OBLIBON DDL BLANCO (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0197",
+    "nombre": "BOCADITO OBLIBON DDL NEGRO (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0198",
+    "nombre": "BOLIFRUT - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0199",
+    "nombre": "BOLIGRAFO AZUL TRILUX FABER 50 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0200",
+    "nombre": "BOLIGRAFO FABER LAPICEERA AZUUL 1MM/0,7MM 50 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0201",
+    "nombre": "BOLIGRAFO FILGO STICK  T.GRUESO  X 50 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0202",
+    "nombre": "BOLSA CARAMELOS LIPO SUPER ACIDOS (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0203",
+    "nombre": "BOLSA CHUPETIN BOLA LOCA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0204",
+    "nombre": "BOLSA CHUPTIN TNT ACIDO 48UNI.  (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0205",
+    "nombre": "BOLSA DE CEREALES TUTTIFRUTTI FLYNN PAF(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0206",
+    "nombre": "BOLSA PASTILLAS LUCKY (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0207",
+    "nombre": "BOMBOM CUPS ORIGINAL (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0208",
+    "nombre": "BOMBOM CUPS PEANUTS BUTTER (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0209",
+    "nombre": "BOMBON DOR 12GRS (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0210",
+    "nombre": "BOMBONES DANCING (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0211",
+    "nombre": "BON O BON BLANCO (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0212",
+    "nombre": "BON O BON BRIGADEIRO (IMPORTADO)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0213",
+    "nombre": "BON O BON COKIES Y CREAM (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0214",
+    "nombre": "BON O BON MORANGO E CREME (IMPORTADO)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0215",
+    "nombre": "BON O BON NEGRO (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0216",
+    "nombre": "BON O BON PISTACHO (1)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0217",
+    "nombre": "BRAUNICHOC 35 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0218",
+    "nombre": "BROCHE CLIP N3 X 100 UNID OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0219",
+    "nombre": "BROCHES DE ABROCHADORA 10X50 X1000 OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0220",
+    "nombre": "BROCHES DE ABROCHADORA 21/6 X 1000 OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0221",
+    "nombre": "BROCHES DE ABROCHADORA 24/6 X 1000 OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0222",
+    "nombre": "BROWNIE CHIPS 62 GRS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0223",
+    "nombre": "BROWNIE MINI 35 GRS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0224",
+    "nombre": "BULL DOG (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0225",
+    "nombre": "BULL DOG ACIDO 30GRS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0226",
+    "nombre": "BULL DOG LIMON (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0227",
+    "nombre": "BULL DOG MANZANA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0228",
+    "nombre": "BULL DOG MIX SANDIA MANZANA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0229",
+    "nombre": "BULL DOG MIX TUTTI FRUTI Y LIMON (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0230",
+    "nombre": "BULL DOG SANDIA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0231",
+    "nombre": "BULL DOG TUTTI FRUTI (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0232",
+    "nombre": "BULL DOG UVA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0233",
+    "nombre": "BUTTER TOFFE  (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0234",
+    "nombre": "BUTTER TOFFE CHOCOLATE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0235",
+    "nombre": "BUTTER TOFFE DDL (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0236",
+    "nombre": "CAJA AMARILLA GOMA JELLY BEANS (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0237",
+    "nombre": "CAJA CARAM. LIQUIDO LAPICERA SIMPSONS(30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0238",
+    "nombre": "CAJA CARAMELO CANDY ROLL (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0239",
+    "nombre": "CAJA CaramelO FlyNn Paf XXL Sin tacc LIMONADA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0240",
+    "nombre": "CAJA Caramelo FlynN Paf XXL Sin tacc TUTTI FRUTI (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0241",
+    "nombre": "CAJA CARAMELO LIPO ACIDOS (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0242",
+    "nombre": "CAJA CARAMELO LIQUIDO LAPICERA BARBIE(30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0243",
+    "nombre": "CAJA CARAMELO NITRO 24 CENTIMETROS (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0244",
+    "nombre": "CAJA CARAMELO POLVO ACIDOS BOTELLA (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0245",
+    "nombre": "CAJA CELESTE GOMA JELLY BEANS (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0246",
+    "nombre": "CAJA CEPI CARAMELO LIQUIDO (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0247",
+    "nombre": "CAJA CHICLE GUMBALLS MINI (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0248",
+    "nombre": "CAJA CHICLE HUEVITO DINO CONFITADO (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0249",
+    "nombre": "CAJA CHUPETIN BEBE LLORONES CHUPETE (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0250",
+    "nombre": "CAJA CHUPETIN LOLLIPOP HALLOWEEN (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0251",
+    "nombre": "CAJA CHUPETIN RING POP GABBYS HOUSE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0252",
+    "nombre": "CAJA CHUPETINES DONUT LIGHT LOLLIPOP (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0253",
+    "nombre": "CAJA CHUPETINES MCDONALS LIGHT LOLLIPOL(30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0254",
+    "nombre": "CAJA CHUPETINES UNICORNS LOLLIPOP (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0255",
+    "nombre": "CAJA CONFITES M Y N (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0256",
+    "nombre": "CAJA JALEAS SQUEEZE MECHAS (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0257",
+    "nombre": "CAJA MALVAVISCOS FRESA (32)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0258",
+    "nombre": "CAJA MALVAVISCOS FRUTAL (32)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0259",
+    "nombre": "CAJA MALVAVISCOS TWIST (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0260",
+    "nombre": "CAJA MALVAVISCOS TWIST (65)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0261",
+    "nombre": "CAJA MINI CHUPETIN LOLLIPOP HALLOWEEN (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0262",
+    "nombre": "CAJA ROLLIPOP CARAMELO LIQUIDO (20)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0263",
+    "nombre": "CAJA SUGUS VIOLETA ACIDOS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0264",
+    "nombre": "CAJITA CHICA GONGYS SIN TACC (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0265",
+    "nombre": "CAJITAS D PLASTICO CATY HOUSE CARAMELO (8)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0266",
+    "nombre": "CAJITAS PLASTICO PUPPY HOUSE CARAMELO (8)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0267",
+    "nombre": "CAÑONCITO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0268",
+    "nombre": "CARAMELO ALKA ACIDO 800GRS BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0269",
+    "nombre": "CARAMELO ARCOR MENTA CHOCOLATE BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0270",
+    "nombre": "CARAMELO ARCOR RODAJAS CRAZY ACIDAS 465GRS BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0271",
+    "nombre": "CARAMELO BILLIKEN MAS 600GRS BOLSA (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0272",
+    "nombre": "CARAMELO BILLIKEN YOGURT 600GRS BOLSA (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0273",
+    "nombre": "CARAMELO BUBALO FRUTILLA HUELLITA ACIDA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0274",
+    "nombre": "CARAMELO BUBALO FRUTILLA HUELLITAS CAJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0275",
+    "nombre": "CARAMELO BUBALO GATOS ACIDOS SURTIDO CAJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0276",
+    "nombre": "CARAMELO BUBBALOO CONFITADOS 24GRS CAJA (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0277",
+    "nombre": "CARAMELO BUBBALOO CONFITADOS 72GRS CAJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0278",
+    "nombre": "CARAMELO CRAZY MISKY BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0279",
+    "nombre": "Caramelo Flynn Paff Sin Tacc CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0280",
+    "nombre": "CARAMELO FLYNNIES SURTIDOS BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0281",
+    "nombre": "CARAMELO FLYNNIES YOGURT BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0282",
+    "nombre": "CARAMELO MENTA CRISTAL ARCOR BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0283",
+    "nombre": "CARAMELO MIEL ARCOR BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0284",
+    "nombre": "CARAMELO MIEL MISKY BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0285",
+    "nombre": "CARAMELO MISKY MENTA VERDE BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0286",
+    "nombre": "CARAMELO MISKY RELLENO 810GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0287",
+    "nombre": "CARAMELO MISKY SURTIDO (BOLSA ROSA) (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0288",
+    "nombre": "CARAMELO PALITO DE LA SELVA EN CAJA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0289",
+    "nombre": "CARAMELO Palitos de la Selva 660grs BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0290",
+    "nombre": "CARAMELO PICO DULCE ACIDO POWER (BOLSA) (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0291",
+    "nombre": "CARAMELO PICO DULCE DURO (BOLSA) (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0292",
+    "nombre": "CARAMELO PICO DULCE MASTICABLE (BOLSA) (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0293",
+    "nombre": "CARAMELO REGALIZ BULL DOG PICANTE (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0294",
+    "nombre": "CARAMELO RELLENO SAQUITO FRUTAL ARCOR 180GRS BOLSA(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0295",
+    "nombre": "CARAMELO RICO MAS MISKY BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0296",
+    "nombre": "CARAMELO SUGUS ANANA X 12 CAJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0297",
+    "nombre": "CARAMELO SUGUS FRUTILLA X 12 CAJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0298",
+    "nombre": "CARAMELO SUGUS MAX ANANA CAJA (70)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0299",
+    "nombre": "CARAMELO SUGUS MAX CEREZA CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0300",
+    "nombre": "CARAMELO SUGUS MAX FRUTILLA CAJA (70)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0301",
+    "nombre": "Caramelo sugus MAX FRUTILLA/TUTTI/SANDIA BOLSA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0302",
+    "nombre": "CARAMELO SUGUS MAX PINTA LENGUA CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0303",
+    "nombre": "CARAMELO SUGUS MAX SANDIA CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0304",
+    "nombre": "CARAMELO SUGUS MAX SOUR BERRIES CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0305",
+    "nombre": "CARAMELO SUGUS MAX TUTTI CAJA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0306",
+    "nombre": "CARAMELO SUGUS MIX ANANA Y UVA BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0307",
+    "nombre": "CARAMELO TNT ACIDO AMARILLO CAJA (60)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0308",
+    "nombre": "CARAMELO TNT PINTA LENGUA AZUL CAJA (60)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0309",
+    "nombre": "CARAMELO TNT TUBI TWIST FRUTILLA CAJA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0310",
+    "nombre": "CARAMELO TNT TUBI TWIST UVA CAJA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0311",
+    "nombre": "CARAMELO TNT VERDE SOUR FIZZ CAJA CAJA (60)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0312",
+    "nombre": "CARAMELO ZOO SELVA BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0313",
+    "nombre": "Caramelos BILLIKEN MAS/YOGURT 600grs BOLSA (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0314",
+    "nombre": "Caramelos Frutales ARCOR BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0315",
+    "nombre": "CARAMELOS RODAJAS ACIDAS 930 GRS BOLSA(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0316",
+    "nombre": "Caramelos Sugus Sin Tacc 700grs BOLSA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0317",
+    "nombre": "CARTEL NARANJU",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0318",
+    "nombre": "CEREAL MIX ALMEDRA MANI CEREAL MIEL (20)",
+    "proveedor": "GOLOMAX"
+  },
+  {
+    "id": "prod-0319",
+    "nombre": "CHICLE ALKA FRUTA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0320",
+    "nombre": "CHICLE ALKA FRUTILLA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0321",
+    "nombre": "CHICLE ALKA MENTA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0322",
+    "nombre": "Chicle Bazooka BANANA (80)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0323",
+    "nombre": "Chicle Bazooka LIMA LIMON (80)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0324",
+    "nombre": "CHICLE BAZOOKA MANGO HOT (80)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0325",
+    "nombre": "Chicle Bazooka MENTA (80)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0326",
+    "nombre": "Chicle Bazooka TUTTI (80)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0327",
+    "nombre": "CHICLE BELDENT FRUTA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0328",
+    "nombre": "CHICLE BELDENT FRUTILLA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0329",
+    "nombre": "CHICLE BELDENT INFINIT CELESTE (15)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0330",
+    "nombre": "CHICLE BELDENT INFINIT VERDE (15)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0331",
+    "nombre": "CHICLE BELDENT NEGRO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0332",
+    "nombre": "CHICLE BELDENT TUTTI-FRUTTI (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0333",
+    "nombre": "CHICLE BELDENT VERDE (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0334",
+    "nombre": "CHICLE BUBBALOO FRUTILLA (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0335",
+    "nombre": "CHICLE BUBBALOO MENTA (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0336",
+    "nombre": "CHICLE BUBBALOO TUTTI (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0337",
+    "nombre": "CHICLE BUBBALOO UVA (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0338",
+    "nombre": "CHICLE CAJA POMO BARBIE (24)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0339",
+    "nombre": "CHICLE CAJA POMO BOB ESPONJA (24)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0340",
+    "nombre": "CHICLE CAJA POMO BRATZ (24)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0341",
+    "nombre": "CHICLE CROC MENTA (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0342",
+    "nombre": "CHICLE CROC TUTTI (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0343",
+    "nombre": "CHICLE CROC UVA (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0344",
+    "nombre": "CHICLE EN BARRA SUPER HIPER ACIDO (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0345",
+    "nombre": "CHICLE FIERITA BANANA (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0346",
+    "nombre": "CHICLE FIERITA FRUTILLA (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0347",
+    "nombre": "CHICLE FIERITA MENTA VERDE (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0348",
+    "nombre": "CHICLE FIERITA RECARGADO FRUTILLA (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0349",
+    "nombre": "CHICLE FIERITA RECARGADO MUNDIAL (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0350",
+    "nombre": "CHICLE FIERITA TUTTI FRUTI (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0351",
+    "nombre": "CHICLE FIERITA UVA (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0352",
+    "nombre": "CHICLE FIERTIA BANANA (100)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0353",
+    "nombre": "CHICLE MAESTROS DEL TERROR (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0354",
+    "nombre": "Chicle sadia globo acido (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0355",
+    "nombre": "CHICLE SANDIA OPEN CANDY (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0356",
+    "nombre": "CHICLE SANDIA OPEN CANDY (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0357",
+    "nombre": "CHICLE TENIS OPEN FRUTILLA CAJA CHICA (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0358",
+    "nombre": "CHICLE TENIS OPEN NARANJA CAJA CHICA (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0359",
+    "nombre": "CHICLE TENNIS OPEN CAJA GRANDE (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0360",
+    "nombre": "CHICLE TENNIS OPEN FRUTILLA - GRANDE (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0361",
+    "nombre": "CHICLE TENNIS OPEN NARANJA - GRANDE (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0362",
+    "nombre": "CHICLE TNT ROJO (40)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0363",
+    "nombre": "CHICLE TOPLINE FRUTA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0364",
+    "nombre": "CHICLE TOPLINE FRUTILLA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0365",
+    "nombre": "CHICLE TOPLINE MENTA FRESCA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0366",
+    "nombre": "CHICLE TOPLINE MENTA VERDE (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0367",
+    "nombre": "CHICLE TOPLINE SANDIA (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0368",
+    "nombre": "CHICLE TOPLINE SEVEN FREEZING MENTOL (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0369",
+    "nombre": "CHICLE TOPLINE SEVEN NARANJA  (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0370",
+    "nombre": "CHICLE TOPLINE SEVEN NEGRO (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0371",
+    "nombre": "CHICLE TOPLINE SEVEN ROJO (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0372",
+    "nombre": "CHICLE TOPLINE SEVEN ROSA (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0373",
+    "nombre": "CHICLE TOPLINE SEVEN SANDIA (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0374",
+    "nombre": "CHICLE TOPLINE SEVEN VIOLETA  (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0375",
+    "nombre": "CHICLE TOPLINE SEVEN X-PLOSIVE  (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0376",
+    "nombre": "CHICLES EN LATA SPRITE, COCA Y FANTA (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0377",
+    "nombre": "CHICLES GUM CANDY EN FORMA LATA (24)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0378",
+    "nombre": "CHILE FLICS MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0379",
+    "nombre": "CHILE FLICS TUTTI FRUTTI (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0380",
+    "nombre": "CHINCHE1 P.X 50 UNID MARCA OLAMI",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0381",
+    "nombre": "CHINCHES COLORES DL X50 UNID (1)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0382",
+    "nombre": "CHIZITOS GOOD SHOW 65GRS (12)",
+    "proveedor": "OK"
+  },
+  {
+    "id": "prod-0383",
+    "nombre": "CHOCMAN 35GRS (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0384",
+    "nombre": "CHOCMAN BACK 35GRS (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0385",
+    "nombre": "CHOCMAN BLANCO 35GRS (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0386",
+    "nombre": "CHOCOARROZ BLANCO (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0387",
+    "nombre": "CHOCOARROZ DDL (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0388",
+    "nombre": "CHOCOARROZ MARROC (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0389",
+    "nombre": "Chocoarroz Sin tacc (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0390",
+    "nombre": "CHOCOLATE BIZNIKKE (15)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0391",
+    "nombre": "CHOCOLATE BLOCK 38GRS (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0392",
+    "nombre": "CHOCOLATE COFLER AIREADO BLANCO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0393",
+    "nombre": "CHOCOLATE COFLER AIREADO COMBINADO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0394",
+    "nombre": "CHOCOLATE COFLER AIREADO NEGRO (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0395",
+    "nombre": "CHOCOLATE COFLER CON ROCKLETS 18GRS (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0396",
+    "nombre": "CHOCOLATE COFLER NEGRO 18GRS (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0397",
+    "nombre": "CHOCOLATE DE A DOS FELFORT (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0398",
+    "nombre": "CHOCOLATE ESPACIAL (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0399",
+    "nombre": "CHOCOLATE FEELING (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0400",
+    "nombre": "Chocolate Hamlet 43 grs (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0401",
+    "nombre": "CHOCOLATE HAMLET ALMENDRAS Y MANI (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0402",
+    "nombre": "CHOCOLATE HAMLET AVELLANA Y MANI (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0403",
+    "nombre": "CHOCOLATE HAMLET BLANCO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0404",
+    "nombre": "CHOCOLATE HAMLET BLANCO CON COOKIS (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0405",
+    "nombre": "CHOCOLATE HAMLET CHOCOLATOSO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0406",
+    "nombre": "CHOCOLATE HAMLET COLOR GRIS CHOCOLAT (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0407",
+    "nombre": "CHOCOLATE HAMLET FRUTILLA (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0408",
+    "nombre": "CHOCOLATE HAMLET NEGRO (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0409",
+    "nombre": "CHOCOLATE HAMLET NEGRO CON COOKIS (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0410",
+    "nombre": "CHOCOLATE MILKA AIREADO ALMENDRAS (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0411",
+    "nombre": "CHOCOLATE MILKA AIREADO COMBINADO  (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0412",
+    "nombre": "CHOCOLATE MILKA AIREADO LECHE (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0413",
+    "nombre": "CHOCOLATE ROCKLETON 5GRS (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0414",
+    "nombre": "CHOCOLATE ROCKLETS PESADILLA HALLOW.(24)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0415",
+    "nombre": "CHOCOLATE SHOT (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0416",
+    "nombre": "CHOCOLATE TODDY AIREADO MIX (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0417",
+    "nombre": "CHOCOLATE TODDY COOKIES Y CREAM (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0418",
+    "nombre": "CHOCOLATE TODDY MILK (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0419",
+    "nombre": "CHOCOLATE TODDY MOUSE (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0420",
+    "nombre": "CHOCOLATE TOFI NEGRO (25)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0421",
+    "nombre": "CHOCOLATIN GEORGALO BLANCO (40)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0422",
+    "nombre": "CHOCOLATIN GEORGALO NEGRO (40)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0423",
+    "nombre": "CHOCOLATIN MISKY 8 GRS BLANCO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0424",
+    "nombre": "CHOCOLATIN MISKY NEGRO 8GRS (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0425",
+    "nombre": "CHUP.DE CAR. MAST CANDY PORT CAJA ROSA(30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0426",
+    "nombre": "CHUPETIN BABY DOLL ACIDO (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0427",
+    "nombre": "CHUPETIN BABY DOLL ACIDO MISTERIO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0428",
+    "nombre": "CHUPETIN BABY DOLL CLASICO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0429",
+    "nombre": "CHUPETIN BULLDOG CRAZY (CAJA NEGRA) (10)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0430",
+    "nombre": "CHUPETIN CATCH POP (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0431",
+    "nombre": "CHUPETIN COSMOS MEGA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0432",
+    "nombre": "CHUPETIN CRAZY POP ROJO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0433",
+    "nombre": "CHUPETIN CRAZY POP VIOLETA (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0434",
+    "nombre": "CHUPETIN EVOLUTION -AZUL- (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0435",
+    "nombre": "CHUPETIN EVOLUTION CEREZA -ROJO- (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0436",
+    "nombre": "CHUPETIN EVOLUTION DUO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0437",
+    "nombre": "CHUPETIN EVOLUTION FRESH BOLSA (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0438",
+    "nombre": "CHUPETIN FIERITA (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0439",
+    "nombre": "CHUPETIN FIERITA CREMOSITO (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0440",
+    "nombre": "CHUPETIN FIERITA FRTUILLA (ROJO) (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0441",
+    "nombre": "CHUPETIN FIERITA NITRO ACIDO (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0442",
+    "nombre": "CHUPETIN FIERITA PINTA LENGUA AZUL (AZUL) (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0443",
+    "nombre": "CHUPETIN FIERITA TATTOO (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0444",
+    "nombre": "CHUPETIN FIERITA TUTTI FUCSIA (ROSA) (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0445",
+    "nombre": "CHUPETIN FLYNN PAFF (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0446",
+    "nombre": "CHUPETIN FLYNN PAFF CEREZA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0447",
+    "nombre": "CHUPETIN FLYNN PAFF MANZANA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0448",
+    "nombre": "CHUPETIN FLYNN PAFF SANDIA-MELON (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0449",
+    "nombre": "CHUPETIN FLYNN PAFF TUTTI-FRUTTI (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0450",
+    "nombre": "CHUPETIN FLYNN PAFF UVA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0451",
+    "nombre": "CHUPETIN FRIES POP (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0452",
+    "nombre": "CHUPETIN MISKY PINTA LENGUA POPS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0453",
+    "nombre": "CHUPETIN MISTER POP YOGUR (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0454",
+    "nombre": "Chupetin Mr FLOKY Uva o Frutilla (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0455",
+    "nombre": "CHUPETIN PALITO DE LA SELVA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0456",
+    "nombre": "CHUPETIN PATITA FRUTILLA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0457",
+    "nombre": "CHUPETIN PICO DULCE (CAJA) (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0458",
+    "nombre": "CHUPETIN PICO DULCE (POTE) (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0459",
+    "nombre": "CHUPETIN PICO DULCE LED (CAJA) (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0460",
+    "nombre": "CHUPETIN PIZZA FRUTILLA (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0461",
+    "nombre": "CHUPETIN POP EVOLUTION SURTIDOS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0462",
+    "nombre": "CHUPETIN POP EXPLOSIVE (PATITA) (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0463",
+    "nombre": "CHUPETIN POP FEST (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0464",
+    "nombre": "CHUPETIN POP FRUTAL 625GRS (BOLSA) (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0465",
+    "nombre": "CHUPETIN POP MISKY BICOLOR (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0466",
+    "nombre": "CHUPETIN PUSH POP (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0467",
+    "nombre": "CHUPETIN RING POP (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0468",
+    "nombre": "CHUPETIN RING POP CAJA AMARILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0469",
+    "nombre": "CHUPETIN RING POP CAJA ROJA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0470",
+    "nombre": "CHUPETIN SHARK POP (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0471",
+    "nombre": "CHUPETIN SPRING POP (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0472",
+    "nombre": "CHUPETIN TOPOLIN JUGUETAZO (10)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0473",
+    "nombre": "CHUPETIN TOPOLIN SORPRESA (10)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0474",
+    "nombre": "CHUPETIN TROMPITO TWISTER (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0475",
+    "nombre": "CINTA CHICA TUBITO X 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0476",
+    "nombre": "CINTA DE PAPEL N18 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0477",
+    "nombre": "CINTA DE PAPEL N24 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0478",
+    "nombre": "CINTA DE PAPEL N36 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0479",
+    "nombre": "CINTA EMBALAJE X100MTS X 6UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0480",
+    "nombre": "CINTA EMBALAJE X40MTS X6 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0481",
+    "nombre": "CLUB SOCIAL JAMON (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0482",
+    "nombre": "CLUB SOCIAL ORIGINAL (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0483",
+    "nombre": "Coca Cola 237 MINI ml (8)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0484",
+    "nombre": "COCA COLA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0485",
+    "nombre": "COCA COLA EN LATA 354 (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0486",
+    "nombre": "Coca Cola ZERO 237ML  MINI (8)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0487",
+    "nombre": "COCA ZERO 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0488",
+    "nombre": "CONJUNTO GEOMETRICO 4PZAS X20 CM (4)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0489",
+    "nombre": "CONJUNTO GEOMETRICO MAPED 3PZAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0490",
+    "nombre": "CONOS 63GRS GOOD SHOW (12)",
+    "proveedor": "OK"
+  },
+  {
+    "id": "prod-0491",
+    "nombre": "CORRECTOR LAPIZ FABER 7ML X 12 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0492",
+    "nombre": "CORRECTOR LAPIZ MICRO TAIKO X24 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0493",
+    "nombre": "CRAZY POP (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0494",
+    "nombre": "CUADERNO CUADRICULADO A4 AVON (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0495",
+    "nombre": "CUADERNO ÉXITO X3 T/ABC X 48 TAPA DURA RALLADO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0496",
+    "nombre": "CUADERNO RALALDO TAPA DURA EXITO N1 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0497",
+    "nombre": "CUADERNO RAYADO A4 AVON (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0498",
+    "nombre": "CUADERNO RAYADO TAPA DURA CLASE GO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0499",
+    "nombre": "CUADERNO ROJO TALENTO RAYADO X 42 HOJAS. TAPA DURA (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0500",
+    "nombre": "CUADERNO T/D TRIUNFANTE X48 UNID CHICO RAYADO,AZUL (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0501",
+    "nombre": "CUADERNO TRIUNFANTE 19X24CM. T/DURA X50 RAYADO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0502",
+    "nombre": "CUBANITO MANTECOL (40)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0503",
+    "nombre": "CUBANITO OBLITA CHOCOLATE (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0504",
+    "nombre": "CUBANITO OBLITA DDL (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0505",
+    "nombre": "CUBANITO OBLITA FRUTILLA (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0506",
+    "nombre": "CUBANITO OBLITA MARROC (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0507",
+    "nombre": "CUBANITOS COFLER SABOR AVELLANA (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0508",
+    "nombre": "CUBANITOS COFLER SABOR CHOCOLATE (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0509",
+    "nombre": "Cubanitos Obleitas Varios sabores 5,5 grs. (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0510",
+    "nombre": "DON SATUR DULCES (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0511",
+    "nombre": "DON SATUR SALADAS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0512",
+    "nombre": "DORINS CLASICAS (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0513",
+    "nombre": "DORINS MIX O CLASICA (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0514",
+    "nombre": "DORINS MIX(16)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0515",
+    "nombre": "DOS CORAZONES (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0516",
+    "nombre": "DUCREM AVELLANAS (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0517",
+    "nombre": "DUCREM LECHE CONDENSADA (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0518",
+    "nombre": "DUCREM NAPOLITANO (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0519",
+    "nombre": "EXHIBIDOR (1)",
+    "proveedor": "OK"
+  },
+  {
+    "id": "prod-0520",
+    "nombre": "EXHIBIDOR TRIO (1)",
+    "proveedor": "OK"
+  },
+  {
+    "id": "prod-0521",
+    "nombre": "FANTA 500 ml (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0522",
+    "nombre": "FIERITA COMEFUEGOS (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0523",
+    "nombre": "FIERITA METRICO (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0524",
+    "nombre": "FIERITA METRICO FRUTILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0525",
+    "nombre": "FIERITA METRICO TUTTI (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0526",
+    "nombre": "FLYNN PAFF BANANA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0527",
+    "nombre": "FLYNN PAFF BANANA Y FRUTILLA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0528",
+    "nombre": "FLYNN PAFF CONFITADO ACIDO X CAJITA (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0529",
+    "nombre": "FLYNN PAFF CONFITADO CAJA YOGURT (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0530",
+    "nombre": "FLYNN PAFF CONFITADOS CAJA CELESTE (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0531",
+    "nombre": "FLYNN PAFF FRUTILLA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0532",
+    "nombre": "FLYNN PAFF FRUTILLA VAINILLA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0533",
+    "nombre": "FLYNN PAFF SABOR A CHICLE GLOBO (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0534",
+    "nombre": "FLYNN PAFF TUTTI FRUTTI (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0535",
+    "nombre": "FLYNN PAFF TUTTI PINTA LENGUA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0536",
+    "nombre": "FLYNN PAFF UVA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0537",
+    "nombre": "FLYNN PAFF YOGURT (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0538",
+    "nombre": "FOLIO ESCOLAR X100UNID MARCA LUMA (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0539",
+    "nombre": "FOLIO LIGGO A/4  X100 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0540",
+    "nombre": "FORT GRAN RICO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0541",
+    "nombre": "FORT LADY (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0542",
+    "nombre": "FRUTIGELATIN (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0543",
+    "nombre": "FRUTIGELATIN GUSANITOS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0544",
+    "nombre": "FRUTIGELATIN SAURIOS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0545",
+    "nombre": "FRUTIGELATIN TRUITOS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0546",
+    "nombre": "GALLE 9 DE ORO ANILLITO CHOCO 120 GRS (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0547",
+    "nombre": "GALLE BUTTER BAKERY 150 GRS (15)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0548",
+    "nombre": "GALLE BUTTER BAKERY CHOCO 150GRS (15)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0549",
+    "nombre": "GALLE CHIPPIS CON CHIPS CHOCO 120 GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0550",
+    "nombre": "GALLE CHOCO RELLENO LIMON 9 DE ORO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0551",
+    "nombre": "GALLE COQUITOS PARNOR (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0552",
+    "nombre": "GALLE PEPITAS MEMBRILLO 160 GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0553",
+    "nombre": "GALLE STREAMER MINI DUO NONNA 160 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0554",
+    "nombre": "GALLE TRAVIATA ORIGINAL DE AGUA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0555",
+    "nombre": "GALLE VAINILLA RELLENO CHOCO 9 DE ORO(16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0556",
+    "nombre": "GALLETITA BISCUITS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0557",
+    "nombre": "GALLETITA CEREAL AVENA Y CHIPS 140G (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0558",
+    "nombre": "GALLETITA CHOCO NONNA 160 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0559",
+    "nombre": "GALLETITA COFLER COOKIES 120 GRS paquete rojo (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0560",
+    "nombre": "GALLETITA INTEGRA CACAO Y CHOCO 200GRS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0561",
+    "nombre": "GALLETITA INTEGRA CHIA Y ARAND. 200GRS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0562",
+    "nombre": "GALLETITA INTEGRA CHIA Y ARAND. 72GRS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0563",
+    "nombre": "GALLETITA INTEGRA MANI Y ALMEND 200GRS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0564",
+    "nombre": "GALLETITA INTEGRA MANI Y ALMEND. 72GRS(1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0565",
+    "nombre": "GALLETITA MANTECADA PARNOR 170 GRS(30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0566",
+    "nombre": "GALLETITA MINI CORONITA BLACK (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0567",
+    "nombre": "GALLETITA MINI CORONITA CHOCO. BLANCO (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0568",
+    "nombre": "GALLETITA MINI CORONITA CHOCOLATE (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0569",
+    "nombre": "GALLETITA MINI CORONITA FRAMBUESA (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0570",
+    "nombre": "GALLETITA MINI CORONITA FRUTILLA (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0571",
+    "nombre": "GALLETITA MINI CORONITA LIMON (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0572",
+    "nombre": "GALLETITA NONNA FRUTILLA 160 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0573",
+    "nombre": "GALLETITA NONNA MOUSSE CHOCO. 160 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0574",
+    "nombre": "GALLETITA NONNA VAINILLA 160 GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0575",
+    "nombre": "GALLETITA OBLITA SABOR VAINILLA 50GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0576",
+    "nombre": "GALLETITA OKEBON 135GRS (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0577",
+    "nombre": "GALLETITA OPERA 55GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0578",
+    "nombre": "GALLETITA OPERA 92GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0579",
+    "nombre": "GALLETITA OREO SIN TACC (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0580",
+    "nombre": "GALLETITA PARNOR COCO 170GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0581",
+    "nombre": "GALLETITA PEPITO 118GRS (60)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0582",
+    "nombre": "GALLETITA RUMBA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0583",
+    "nombre": "GALLETITA SUAVECITAS 140GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0584",
+    "nombre": "GALLETITA TRIO VARIETTE 200 GRS (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0585",
+    "nombre": "GALLETITAS 9 DE ORO VAINILLA Y CHOCO. (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0586",
+    "nombre": "GALLETITAS AMOR (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0587",
+    "nombre": "Galletitas Bagley Surtidas 450 gramos (21)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0588",
+    "nombre": "GALLETITAS CACHAFAZ ALGARROBA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0589",
+    "nombre": "GALLETITAS CELOSAS 110GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0590",
+    "nombre": "GALLETITAS CEREALITAS 207 GRS (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0591",
+    "nombre": "GALLETITAS CHISPAS FANTOCHE 155GRS(18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0592",
+    "nombre": "GALLETITAS CHOCOLINAS 100GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0593",
+    "nombre": "GALLETITAS CHOCOLINAS 170GRS (40)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0594",
+    "nombre": "Galletitas Cofler Block 124grs (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0595",
+    "nombre": "Galletitas Criollitas 100 grs (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0596",
+    "nombre": "GALLETITAS DALE CHOCOLATE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0597",
+    "nombre": "GALLETITAS DALE FRUTILLA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0598",
+    "nombre": "GALLETITAS DALE VAINILLA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0599",
+    "nombre": "GALLETITAS FAUNA 150 GRS (28)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0600",
+    "nombre": "GALLETITAS FORMIS  72 GRS (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0601",
+    "nombre": "GALLETITAS FORMIS CHOCOLATE 72 GRS (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0602",
+    "nombre": "GALLETITAS FORMIS DDL 72 GRS (60)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0603",
+    "nombre": "GALLETITAS FRUTIGRAM AVENA Y PAS. 250G (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0604",
+    "nombre": "GALLETITAS FUN CHISPAS CHOCOLATE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0605",
+    "nombre": "GALLETITAS HOGAREÃ‘AS MIX CEREALES (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0606",
+    "nombre": "GALLETITAS HOGAREÃ‘AS SALVADO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0607",
+    "nombre": "GALLETITAS MACUCAS 85GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0608",
+    "nombre": "GALLETITAS MACUCAS CHOCOLATE 110GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0609",
+    "nombre": "GALLETITAS MANA LECHE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0610",
+    "nombre": "GALLETITAS MELLIZAS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0611",
+    "nombre": "GAlletitas Merengadas (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0612",
+    "nombre": "GALLETITAS MINI OREO 50GRS (54)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0613",
+    "nombre": "GALLETITAS MOROCHITAS 140 GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0614",
+    "nombre": "GALLETITAS OREO GRANDE 118 GRAMOS (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0615",
+    "nombre": "GALLETITAS PEPITOS 119GRS (60)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0616",
+    "nombre": "GALLETITAS PITUSAS BLACK (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0617",
+    "nombre": "GALLETITAS PITUSAS CHOCOLATE 160GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0618",
+    "nombre": "GALLETITAS PITUSAS FRUTILLA 160GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0619",
+    "nombre": "GALLETITAS PITUSAS LIMON (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0620",
+    "nombre": "GALLETITAS PITUSAS MERENGUE 120 GRS (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0621",
+    "nombre": "GALLETITAS PITUSAS MOUSSE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0622",
+    "nombre": "GALLETITAS PITUSAS VAINILLA 160GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0623",
+    "nombre": "GALLETITAS POLVORITA CHOCOLATE 81GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0624",
+    "nombre": "GALLETITAS POLVORITA FRUTILLA 81GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0625",
+    "nombre": "GALLETITAS POLVORITA VAINILLA 81GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0626",
+    "nombre": "GALLETITAS PORTENITAS 139 GRS (36)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0627",
+    "nombre": "GALLETITAS RELLENAS BON O BON (PAQUETE AMARILLO) (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0628",
+    "nombre": "GALLETITAS RELLENAS CHOCO CREAMY (PAQUETE CELESTE) (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0629",
+    "nombre": "GALLETITAS RELLENAS CHOCOCOLATE (PAQUETE ROJO) (1)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0630",
+    "nombre": "Galletitas Rocklets 118grs (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0631",
+    "nombre": "GALLETITAS SALVADO SIN SAL (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0632",
+    "nombre": "GALLETITAS SERRANAS 112 GRS (48)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0633",
+    "nombre": "GALLETITAS SONRISAS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0634",
+    "nombre": "GALLETITAS TODDY 126GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0635",
+    "nombre": "GALLETITAS TODDY 50GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0636",
+    "nombre": "GALLETITAS TORTITA BLACK (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0637",
+    "nombre": "GALLETITAS TORTITA CHOCOLATE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0638",
+    "nombre": "GALLETITAS TRAVIATA KESITA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0639",
+    "nombre": "GALLETITAS TRAVIATA PORTEÑITAS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0640",
+    "nombre": "GALLETITAS TRAVIATA PORTEÑITAS AZUCARADAS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0641",
+    "nombre": "GALLETITAS TRAVIATA REX (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0642",
+    "nombre": "Galletitas Vocacion (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0643",
+    "nombre": "GALLETITAS VOCACION ACARAMELADAS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0644",
+    "nombre": "GALLTITAS CHISPITAS FACHITAS 140GRS(30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0645",
+    "nombre": "GANCHO ABROCHADORA MIT N50 5000UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0646",
+    "nombre": "GATORADE 500 ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0647",
+    "nombre": "GATORADE AZUL 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0648",
+    "nombre": "GATORADE FRUTOS TROPICALES 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0649",
+    "nombre": "GATORADE MANGO 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0650",
+    "nombre": "GATORADE MANZANA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0651",
+    "nombre": "GATORADE NARANJA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0652",
+    "nombre": "GATORADE UVA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0653",
+    "nombre": "GOMA DE BORRAR TALBOT 36 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0654",
+    "nombre": "GOMA GUMMI ZONE HAMBURGUESA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0655",
+    "nombre": "GOMA GUMMI ZONE PANCHO (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0656",
+    "nombre": "GOMA GUMMI ZONE PIZZA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0657",
+    "nombre": "GOMA MISKY ROLL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0658",
+    "nombre": "GOMA MOGUL ACIDA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0659",
+    "nombre": "GOMA MOGUL CAJA DE PLATICO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0660",
+    "nombre": "GOMA MOGUL FRUTAL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0661",
+    "nombre": "GOMA MOGUL OSO EXTREME (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0662",
+    "nombre": "GOMA MOGUL ROCKS EXTREME (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0663",
+    "nombre": "GOMA MOGUL SANDIA EXTREME (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0664",
+    "nombre": "GOMAS BOLITAS RIVER (30)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0665",
+    "nombre": "GOMAS DE BORRAR FILGO  X 40 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0666",
+    "nombre": "GOMAS DE BORRAR FILGO TEK BLANCA X 36 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0667",
+    "nombre": "GOMAS DE BORRAR FILGO WIP C CUBREGOMA X12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0668",
+    "nombre": "GOMAS DE BORRAR MAPED DUO TECHNIC X 36 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0669",
+    "nombre": "GOMAS FIERITA FRUTALES (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0670",
+    "nombre": "GOMAS FLYNN PAF JELLY BEANS CHALLENGE(12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0671",
+    "nombre": "GOMAS MOGUL COLMILLOS HALLOWEEN (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0672",
+    "nombre": "Gomas Mogul FORMIS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0673",
+    "nombre": "GOMITA FLNN PAFF (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0674",
+    "nombre": "GOMITA FLNN PAFF AZUCARADAS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0675",
+    "nombre": "GOMITA FLNN PAFF SPORT (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0676",
+    "nombre": "GOMITA FLNN PAFF SURTIDO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0677",
+    "nombre": "GOMITA FLNN PAFF TUTTI FRUTTI (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0678",
+    "nombre": "GOMITA GUMMI ZONE DONA DOUGHNUTS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0679",
+    "nombre": "GOMITAS BIG TOASTIE (18)",
+    "proveedor": "GOLOMAX"
+  },
+  {
+    "id": "prod-0680",
+    "nombre": "GOMITAS BOLITAS BOCA (30)",
+    "proveedor": "GOLOMAX"
+  },
+  {
+    "id": "prod-0681",
+    "nombre": "Gomitas Fundipperz (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0682",
+    "nombre": "GOMITAS GUMMI BEAR BURGER OSO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0683",
+    "nombre": "GOMITAS GUMMI CUPCAKE (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0684",
+    "nombre": "GOMITAS MONSTER INC (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0685",
+    "nombre": "GOMITAS SABOR BANANA GOLOMIX 80GRS. (25)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0686",
+    "nombre": "GOMITAS SABOR FRUTILLA GOLOMIX 80GRS. (25)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0687",
+    "nombre": "GOMITAS SABOR MIX FRUTAL GOLOMIX 80GRS. (25)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0688",
+    "nombre": "Gomitas Yummy 30grs (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0689",
+    "nombre": "GONGYS CAJA GRANDE (48)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0690",
+    "nombre": "GRAFFITI BLANCO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0691",
+    "nombre": "GRAFFITI NEGRO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0692",
+    "nombre": "HOJAS REPUESTO ÉXITO X480 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0693",
+    "nombre": "HOJAS REPUESTO RIVADAVIA X 480 UNID. S/BANDA (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0694",
+    "nombre": "HUEVOS DE PASCUA DULL DOG (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0695",
+    "nombre": "JORGITO BLISTER X6U. BLANCO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0696",
+    "nombre": "JORGITO BLISTER X6U. MOUSSE (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0697",
+    "nombre": "JORGITO BLISTER X6U. NEGRO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0698",
+    "nombre": "Jugo Baggio 200ml (NARAN,MULT,MANZ) (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0699",
+    "nombre": "JUGO CEPITA MANZANA 200ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0700",
+    "nombre": "JUGO CEPITA MULTIFRUTA 200ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0701",
+    "nombre": "JUGO CEPITA NARANJA 200ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0702",
+    "nombre": "JUGO NARANJIN 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0703",
+    "nombre": "JUGO NARANJIN FRUTILLA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0704",
+    "nombre": "JUGO NARANJIN MANZANA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0705",
+    "nombre": "JUGO NARANJIN MULTIFRUTA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0706",
+    "nombre": "JUGO NARANJIN NARANJA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0707",
+    "nombre": "JUGO NARANJIN NARANJA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0708",
+    "nombre": "JUGO NARANJIN UVA 190ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0709",
+    "nombre": "JUGO PEPITO 160ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0710",
+    "nombre": "JUGO PEPITO MANZANA 160ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0711",
+    "nombre": "JUGO PEPITO MULTIFRUTA 160ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0712",
+    "nombre": "JUGO PEPITO NARANJA 160ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0713",
+    "nombre": "Jugo Pindapoy 200 ml (Naranja,Manzana,etc) (18)",
+    "proveedor": "BIANFRAN"
+  },
+  {
+    "id": "prod-0714",
+    "nombre": "JUGO PINDAPOY MANDANA (18)",
+    "proveedor": "BIANFRAN"
+  },
+  {
+    "id": "prod-0715",
+    "nombre": "JUGO PINDAPOY MANZANA (18)",
+    "proveedor": "BIANFRAN"
+  },
+  {
+    "id": "prod-0716",
+    "nombre": "JUGO PINDAPOY MULTIFRUTA (18)",
+    "proveedor": "BIANFRAN"
+  },
+  {
+    "id": "prod-0717",
+    "nombre": "JUGO PINDAPOY NARANJA (18)",
+    "proveedor": "BIANFRAN"
+  },
+  {
+    "id": "prod-0718",
+    "nombre": "JUGO SMUDIS BANANA-ANANA-FRUTILLA 500ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0719",
+    "nombre": "JUGO SMUDIS NARANJA 500ML (12)",
+    "proveedor": "CROCANTO"
+  },
+  {
+    "id": "prod-0720",
+    "nombre": "Jugo Tutti 200ml (Naranja,Multifruta,etc) (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0721",
+    "nombre": "JUGO TUTTI MANZANA 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0722",
+    "nombre": "JUGO TUTTI MULTIFRUTA 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0723",
+    "nombre": "JUGO TUTTI NARANJA 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0724",
+    "nombre": "JUGO TUTTI POWER UVA 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0725",
+    "nombre": "JUGO TUTTI SABOR CHICLE 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0726",
+    "nombre": "JUGO TUTTI XTREM ACIDO 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0727",
+    "nombre": "KESITAS EN BOLSITA 75GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0728",
+    "nombre": "KESITAS EN CAJA 125GRS (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0729",
+    "nombre": "KINDER BUENO (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0730",
+    "nombre": "KINDER JOY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0731",
+    "nombre": "KIOSCO ARCOR EN CASA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0732",
+    "nombre": "KROMY (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0733",
+    "nombre": "KROMY CHOCOLATE (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0734",
+    "nombre": "KROMY CHOCOLATE BLANCO (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0735",
+    "nombre": "KROMY CHOCOLATE BLANCO Y FRUTILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0736",
+    "nombre": "KROMY CHOCOLATE CON AVELLANAS (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0737",
+    "nombre": "KROMY CHOCOLATE CON VAINILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0738",
+    "nombre": "KROMY COMBINADO (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0739",
+    "nombre": "KROMY FRUTILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0740",
+    "nombre": "KROMY FRUTILLA CON CHOCOLATE (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0741",
+    "nombre": "KROMY FRUTILLA Y VAINILLA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0742",
+    "nombre": "KROMY MANI CON CHOCOLATE (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0743",
+    "nombre": "KROMY NAPOLITANO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0744",
+    "nombre": "Kromy Varios Sabores 10grs (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0745",
+    "nombre": "LAPICERA AZUL ROLLER GEL BORRABLE 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0746",
+    "nombre": "LAPICERAS BIC AZUL X50 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0747",
+    "nombre": "LAPICERAS DE COLORES TINTA AZUL ROLLER GEL BORRABLE 12 UNID.  (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0748",
+    "nombre": "LAPICES BIC NEGRO Y DE COLORES 15 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0749",
+    "nombre": "LAPICES DE COLORES FABER 15UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0750",
+    "nombre": "LAPICES DE COLORES MAPED STRONG  (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0751",
+    "nombre": "LAPIZ COLOR FILGO X 12 UNID. LARGO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0752",
+    "nombre": "LAPIZ LAPICES NEGRO BIC EVOLUTION X 12UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0753",
+    "nombre": "LAPIZ NEGRO FILGO X 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0754",
+    "nombre": "LAPIZ NEGRO MAPED X 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0755",
+    "nombre": "LARGUITOS - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0756",
+    "nombre": "LATA FANTA 354ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0757",
+    "nombre": "LATA FANTA ZERO 354ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0758",
+    "nombre": "LECHE BAGGIO CHOCOLATADA 200ml (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0759",
+    "nombre": "LECHE CHOCHOCO 200ML (18)",
+    "proveedor": "TUTTI"
+  },
+  {
+    "id": "prod-0760",
+    "nombre": "LECHE CINDOR 200ML (24)",
+    "proveedor": "ARANJUEZ"
+  },
+  {
+    "id": "prod-0761",
+    "nombre": "LECHE FANTOCHE 200 ML (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0762",
+    "nombre": "LECHE NESQUIK 200ML (24)",
+    "proveedor": "ARANJUEZ"
+  },
+  {
+    "id": "prod-0763",
+    "nombre": "LENGUETAZO AMARILLO PINTALENGUA FRAMB(32)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0764",
+    "nombre": "LENGUETAZO CELESTE TUTTI-FRUTI (32)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0765",
+    "nombre": "LENGUETAZO TROPICAL PUNCH (32)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0766",
+    "nombre": "LENGUETAZO VERDE MANZANA(32)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0767",
+    "nombre": "Levite 500 ml (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0768",
+    "nombre": "Levite 500ML ANANA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0769",
+    "nombre": "Levite 500ML MANZANA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0770",
+    "nombre": "Levite 500ML NARANJA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0771",
+    "nombre": "Levite 500ML POMELO (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0772",
+    "nombre": "LLAVERO DE PLASTICO CATS PASTILLAS (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0773",
+    "nombre": "LOTSA FIZZ CLASICO CAJA AMARILLA (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0774",
+    "nombre": "LOTSA FIZZ ESPANTO LENGUA (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0775",
+    "nombre": "LOTSA FIZZ EXTREME PICANTE (48)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0776",
+    "nombre": "MALVAVISCO PALITO DE LA SELVA (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0777",
+    "nombre": "MALVAVISCOS BEBES LLORONES (36)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0778",
+    "nombre": "MALVAVISCOS FRESA 6 UNID. X TIRA 12GRS (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0779",
+    "nombre": "MALVAVISCOS FRUTAL 6 UNID. X TIRA 12GRS (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0780",
+    "nombre": "MALVAVISCOS LABUBU (36)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0781",
+    "nombre": "MALVAVISCOS OSO (36)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0782",
+    "nombre": "MANAOS COLA 600ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0783",
+    "nombre": "MANAOS LIMA 600 ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0784",
+    "nombre": "MANAOS NARANJA 600 ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0785",
+    "nombre": "MANAOS POMELO 600 ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0786",
+    "nombre": "MANAOS SURTIDAS (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0787",
+    "nombre": "Mantecol 26 grs (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0788",
+    "nombre": "MARCADOR FABER FIESTA X 10 UNID. COLORES (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0789",
+    "nombre": "MARCADOR FIBRON TRABI 411 PLUS PERMANENTE 12UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0790",
+    "nombre": "MARCADOR FILGO COLORES X 6 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0791",
+    "nombre": "MARCADOR FILGO PARA PIZARRA BRILLANTE 6UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0792",
+    "nombre": "MARCADOR FILGO X 10 UNID. COLORES (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0793",
+    "nombre": "MARCADOR MAPED OCEAN X 10 UNID. COLORES LAVABLE (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0794",
+    "nombre": "MARCADOR MP DOBLE PUNTA PERMANENTE OLAMI X12UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0795",
+    "nombre": "MARCADOR MP DOBLE PUNTA PERMANENTE OLAMI X24UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0796",
+    "nombre": "MARCADOR TRABI PIZARRA FILGO X12UNID COLOR NEGRO 450 PLUS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0797",
+    "nombre": "MEMBRILLITOS KOKIS 200 GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0798",
+    "nombre": "MENTITA CEREZA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0799",
+    "nombre": "MENTITA KIDS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0800",
+    "nombre": "MENTITA SANDIA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0801",
+    "nombre": "MENTITAS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0802",
+    "nombre": "MENTITAS DULCE DE LECHE (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0803",
+    "nombre": "MENTITAS FRUTAL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0804",
+    "nombre": "MENTITAS MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0805",
+    "nombre": "MIELCITAS 50 UNID. X BOLSITA CAJA 600 UNID. (600)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0806",
+    "nombre": "MINI CHICLES BOTELLITA MINI BLUPER (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0807",
+    "nombre": "MINI TORTA CHOCMAN NEGRO 68GRS (15)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0808",
+    "nombre": "MINI TORTA RAPSODIA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0809",
+    "nombre": "MIRINDA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0810",
+    "nombre": "MOGUL COLA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0811",
+    "nombre": "MOGUL DIENTES (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0812",
+    "nombre": "MOGUL EXTREME CONFITADOS CAJA AMARILLA(16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0813",
+    "nombre": "MOGUL EXTREME CONFITADOS CAJA FUCSIA(16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0814",
+    "nombre": "MOGUL EXTREME LENGUA MAX (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0815",
+    "nombre": "MOGUL EXTREME MASTI SPLASH (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0816",
+    "nombre": "MOGUL EXTREME MASTI SPLASH EXTREME (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0817",
+    "nombre": "MOGUL EXTREME MINI GUSANITOS HALLOW.(10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0818",
+    "nombre": "MOGUL EXTREME OSO PICANTE (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0819",
+    "nombre": "Mogul Extreme PALOTES (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0820",
+    "nombre": "MOGUL EXTREME PALOTES PICANTE (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0821",
+    "nombre": "MOGUL EXTREME TUBITO MAX (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0822",
+    "nombre": "MOGUL EXTREME TUBITOS CAJA PLASTICO (1)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0823",
+    "nombre": "Mogul Extreme TUBO MAX (CELESTE) (24)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0824",
+    "nombre": "Mogul Extreme TUBO MAX 620 gramos (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0825",
+    "nombre": "MOGUL FORMIS CEREBRITOS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0826",
+    "nombre": "MOGUL FORMIS DINOSAURIOS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0827",
+    "nombre": "MOGUL FORMIS OSITO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0828",
+    "nombre": "MOGUL FORMIS PIECITOS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0829",
+    "nombre": "MOGUL FORMIS TIBURONES (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0830",
+    "nombre": "MOGUL MASTI CONFITADOS (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0831",
+    "nombre": "MOGUL MASTI PALOTES TUTTI FRUTTI (8)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0832",
+    "nombre": "MOGUL MASTI ROLL MANZANA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0833",
+    "nombre": "MOGUL MASTI ROLL TUTTI FRUTTI (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0834",
+    "nombre": "MOGUL MORA (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0835",
+    "nombre": "Mogul Tubito FRUTILLA (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0836",
+    "nombre": "Mogul Tubito TITTU FRUTI (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0837",
+    "nombre": "MOGUL VIBORITAS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0838",
+    "nombre": "NACHOS COMUNES QUENTO 40GRS (54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0839",
+    "nombre": "NACHOS GUACAMOLE 82 GRS.  (22)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0840",
+    "nombre": "NARANJU ANANA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0841",
+    "nombre": "NARANJU COLA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0842",
+    "nombre": "NARANJU FRUTILLA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0843",
+    "nombre": "NARANJU MANZANA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0844",
+    "nombre": "NARANJU NARANJA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0845",
+    "nombre": "NARANJU SURTIDO (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0846",
+    "nombre": "NARANJU UVA (160)",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0847",
+    "nombre": "nuevo",
+    "proveedor": "NARANJU"
+  },
+  {
+    "id": "prod-0848",
+    "nombre": "NUGATON BLANCO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0849",
+    "nombre": "NUGATON NEGRO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0850",
+    "nombre": "OBLEA ARCOR MILK (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0851",
+    "nombre": "OBLEA BON O BON BLANCO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0852",
+    "nombre": "OBLEA BON O BON NEGRO (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0853",
+    "nombre": "OBLEA HAMLETON 28GRS (16)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-0854",
+    "nombre": "OBLEA MANTECOL (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0855",
+    "nombre": "OJALILLOS ORI-TEC BLISTER X30 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0856",
+    "nombre": "OJOS LOCOS GRANDE (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0857",
+    "nombre": "OPERA CHOCOLATE 68GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0858",
+    "nombre": "OPERA FRUTILLA 68GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0859",
+    "nombre": "PALITO DE LA SELVA CAJA ACIDO BLUEBERRY (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0860",
+    "nombre": "PALITO DE LA SELVA CAJA ANANA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0861",
+    "nombre": "PALITO DE MAIZ CHIZITOS - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0862",
+    "nombre": "PALITOS SALADOS - CAPULLITO EN FLOR 100GRS (16)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0863",
+    "nombre": "PALITOS SALADOS GOOD SHOW 25grs. (30)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0864",
+    "nombre": "PALITOS SALADOS GOOD SHOW 90grs. (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0865",
+    "nombre": "PALITOS SALADOS JAMON 153GRS G. SHOW(20)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0866",
+    "nombre": "PALITOS SALADOS QUESO 153GRS G. SHOW(20)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0867",
+    "nombre": "PALOTES BLUEBERRY (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0868",
+    "nombre": "PALOTES SANDIA (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0869",
+    "nombre": "PALOTES TUTTI (70)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0870",
+    "nombre": "PAPAS AMERICANO GOOD SHOW 23 GRS (10)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0871",
+    "nombre": "PAPAS FRITAS AMERICANO 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0872",
+    "nombre": "PAPAS FRITAS CHEDDAR 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0873",
+    "nombre": "PAPAS FRITAS CLASICA 23GRS GOOD SHOW (10)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0874",
+    "nombre": "PAPAS FRITAS CLASICA 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0875",
+    "nombre": "PAPAS FRITAS CREMA Y CEBOLLA 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0876",
+    "nombre": "PAPAS FRITAS HUEVO 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0877",
+    "nombre": "PAPAS FRITAS JAMON 53GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0878",
+    "nombre": "PAPAS FRITAS KETCHUP 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0879",
+    "nombre": "PAPAS FRITAS PIMIENTA 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0880",
+    "nombre": "PAPAS FRITAS QUENTO CHEDDAR 45GRS (54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0881",
+    "nombre": "PAPAS FRITAS QUENTO CLASICAS 50GRS(54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0882",
+    "nombre": "PAPAS FRITAS QUENTO JAMON 45GRS(54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0883",
+    "nombre": "PAPAS FRITAS QUENTO KETCHUP 45GRS (54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0884",
+    "nombre": "PAPAS FRITAS QUENTO QUESO CREMA 45GRS (54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0885",
+    "nombre": "PAPAS FRITAS QUENTO SALAME 45GRS (54)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-0886",
+    "nombre": "PAPAS FRITAS SIN SAL 63GRS GOOD SHOW (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0887",
+    "nombre": "PAPAS PICANTES GOOD SHOW 50 GRS (12)",
+    "proveedor": "SHOW"
+  },
+  {
+    "id": "prod-0888",
+    "nombre": "PASO DE LOS TOROS POMELO 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0889",
+    "nombre": "Pasta cremosa bumper (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0890",
+    "nombre": "PASTA CREMOSA BUMPER (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0891",
+    "nombre": "PASTA CREMOSA BUMPER (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0892",
+    "nombre": "Pasta cremosa choki (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0893",
+    "nombre": "PASTA CREMOSA CHOKI (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0894",
+    "nombre": "PASTA CREMOSA CHOKI (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0895",
+    "nombre": "Pasta cremosa halfie con sello (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0896",
+    "nombre": "PASTA CREMOSA HALFIE CON SELLO (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0897",
+    "nombre": "PASTA CREMOSA HALFIE CON SELLO (12)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0898",
+    "nombre": "PASTILLA ALKA CEREZA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0899",
+    "nombre": "PASTILLA ALKA MENTA NEGRO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0900",
+    "nombre": "PASTILLA ALKA MENTA VERDE (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0901",
+    "nombre": "PASTILLA DE GOMA CALABAZA DE TERROR (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0902",
+    "nombre": "PASTILLA DRF NARANJA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0903",
+    "nombre": "PASTILLA EN LATA SURTIDO (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0904",
+    "nombre": "PASTILLA FULLMINT CEREZA/MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0905",
+    "nombre": "PASTILLA FULLMINT CHOCOLATE/MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0906",
+    "nombre": "PASTILLA GOMA EMOJI POP FRUTILLA (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0907",
+    "nombre": "PASTILLA MENTHOPLUS CEREZA - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0908",
+    "nombre": "PASTILLA MENTHOPLUS CEREZA - ZERO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0909",
+    "nombre": "PASTILLA MENTHOPLUS CEREZA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0910",
+    "nombre": "PASTILLA MENTHOPLUS CREMMY - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0911",
+    "nombre": "PASTILLA MENTHOPLUS MENTA VERDE (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0912",
+    "nombre": "PASTILLA MENTHOPLUS MENTOL ZERO (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0913",
+    "nombre": "PASTILLA MENTHOPLUS MIEL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0914",
+    "nombre": "PASTILLA REFRESCO CEREZA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0915",
+    "nombre": "PASTILLA REFRESCO NARANJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0916",
+    "nombre": "PASTILLA REFRESCO TROPICAL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0917",
+    "nombre": "PASTILLA REFRESCO TUTTI (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0918",
+    "nombre": "PASTILLA TNT MANZANA (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0919",
+    "nombre": "PASTILLAS ALKA MENTA, ETC (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0920",
+    "nombre": "PASTILLAS BIYU (12)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0921",
+    "nombre": "PASTILLAS DE GOMA BANANAS MOGUL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0922",
+    "nombre": "PASTILLAS DRF ANIS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0923",
+    "nombre": "PASTILLAS DRF CITRUS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0924",
+    "nombre": "PASTILLAS DRF FRUTOS CITRICOS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0925",
+    "nombre": "PASTILLAS DRF FRUTOS ROJOS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0926",
+    "nombre": "PASTILLAS DRF LIMON (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0927",
+    "nombre": "PASTILLAS DRF MENTA VERDE (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0928",
+    "nombre": "PASTILLAS DRF MENTOL (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0929",
+    "nombre": "PASTILLAS FULLMINT CEREZA MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0930",
+    "nombre": "PASTILLAS FULLMINT CHOCO Y MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0931",
+    "nombre": "PASTILLAS FULLMINT MENTA STRONG (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0932",
+    "nombre": "PASTILLAS FULLMINT NARANJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0933",
+    "nombre": "PASTILLAS HALLS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0934",
+    "nombre": "PASTILLAS HALLS CHERRY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0935",
+    "nombre": "PASTILLAS HALLS MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0936",
+    "nombre": "PASTILLAS HALLS MIEL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0937",
+    "nombre": "PASTILLAS HALLS MIEL Y MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0938",
+    "nombre": "PASTILLAS HALLS SANDIA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0939",
+    "nombre": "PASTILLAS MENTHOPLUS - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0940",
+    "nombre": "PASTILLAS MENTHOPLUS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0941",
+    "nombre": "PASTILLAS MENTHOPLUS 2 CHERRY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0942",
+    "nombre": "PASTILLAS MENTHOPLUS CAFE - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0943",
+    "nombre": "PASTILLAS MENTHOPLUS CHERRY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0944",
+    "nombre": "PASTILLAS MENTHOPLUS MANZANA - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0945",
+    "nombre": "PASTILLAS MENTHOPLUS MENTOL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0946",
+    "nombre": "PASTILLAS MENTHOPLUS NARANJA - 2 (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0947",
+    "nombre": "PASTILLAS MENTHOPLUS STRONG NEGRO (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0948",
+    "nombre": "PASTILLAS MENTOS FRUTAS (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0949",
+    "nombre": "PASTILLAS MENTOS FRUTILLA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0950",
+    "nombre": "PASTILLAS MENTOS MAGIC (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0951",
+    "nombre": "PASTILLAS MENTOS TUTTI (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0952",
+    "nombre": "PASTILLAS PUNCH (60)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0953",
+    "nombre": "PASTILLAS YAPA (36)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0954",
+    "nombre": "PASTILLAS YIPI (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0955",
+    "nombre": "Pastillas ZIPITO (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0956",
+    "nombre": "PEPAS TRIO 200GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0957",
+    "nombre": "PEPSI 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0958",
+    "nombre": "PEPSI BLACK 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0959",
+    "nombre": "PEPSI LATA 354ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0960",
+    "nombre": "PERFORADORA CHICA ECONOMICO OLAMI (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0961",
+    "nombre": "PINTO GLITTER PASTEL 25GRS / 12UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0962",
+    "nombre": "PINTO GLITTER SURTIDO 25GRS / 12UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0963",
+    "nombre": "PINTO GOMA FILGO 30ML. 12 UNID.  (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0964",
+    "nombre": "PINTO GOMA FILGO 50ML 12UNID.  (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0965",
+    "nombre": "PIPA CLASICA (CAJA ROJA) (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "FORDO"
+  },
+  {
+    "id": "prod-0966",
+    "nombre": "PIPA PELADA 25GRS (20)",
+    "proveedor": "PAMELI",
+    "pasillo": "FORDO"
+  },
+  {
+    "id": "prod-0967",
+    "nombre": "PIZZITAS - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-0968",
+    "nombre": "PIZZITOS NIKITOS (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-0969",
+    "nombre": "PLACER 500 ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0970",
+    "nombre": "PLACER ANANA 1 LITRO (6)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0971",
+    "nombre": "PLACER ANANA 500ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0972",
+    "nombre": "PLACER MANZANA 1 LITRO (6)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0973",
+    "nombre": "PLACER MANZANA 500ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0974",
+    "nombre": "PLACER NARANJA 500ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0975",
+    "nombre": "PLACER PERA 1 LITRO (6)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0976",
+    "nombre": "PLACER PERA 500ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0977",
+    "nombre": "PLACER POMELO 1 LITRO (6)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0978",
+    "nombre": "PLACER POMELO 500ML (12)",
+    "proveedor": "MANAOS"
+  },
+  {
+    "id": "prod-0979",
+    "nombre": "PLASTICOLA 35GRS 12UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0980",
+    "nombre": "PLASTICOLA ADHESIVO FILGO GLITTER X 25 GRS FLUO",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0981",
+    "nombre": "PLASTICOLA ADHESIVO FILGO VINILICO X30ML X 24 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0982",
+    "nombre": "PLASTICOLA ADHESIVO FILGO VINILICO X60ML X 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0983",
+    "nombre": "POCHOCLOS BIGGYS 100GRS (20)",
+    "proveedor": "BIGGYS"
+  },
+  {
+    "id": "prod-0984",
+    "nombre": "POCHOCLOS BIGGYS 60GRS (30)",
+    "proveedor": "BIGGYS"
+  },
+  {
+    "id": "prod-0985",
+    "nombre": "POCHOCLOS BIGGYS TUTTI 50GRS (30)",
+    "proveedor": "BIGGYS"
+  },
+  {
+    "id": "prod-0986",
+    "nombre": "POTE GOMITAS BOCA (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0987",
+    "nombre": "POTE GOMITAS FRUTAS AZULES (200)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0988",
+    "nombre": "POTE GOMITAS FRUTAS VIOLETAS (200)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0989",
+    "nombre": "POTE GOMITAS LABUBU (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0990",
+    "nombre": "POTE GOMITAS OSO (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0991",
+    "nombre": "POTE GOMITAS SELECCION ARGENTINA (30)",
+    "proveedor": "IMPORTADO"
+  },
+  {
+    "id": "prod-0992",
+    "nombre": "POTE GUMBALS CHICO (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0993",
+    "nombre": "POTE OJOS MEGA (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0994",
+    "nombre": "POTE PASTILLA GOMA FRUTITA LOCA FRUTILLA CHICAS (30)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0995",
+    "nombre": "POTE PASTILLA GOMA FRUTITA LOCA FRUTILLA GRANDES (50)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-0996",
+    "nombre": "POTE SACAPUNTAS PLASTICO COLORES DUBI 100UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0997",
+    "nombre": "POTE TEMPERA TINTORETO 250GRS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-0998",
+    "nombre": "POWERADE AZUL 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-0999",
+    "nombre": "POWERADE FRUTOS TROPACALES 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1000",
+    "nombre": "POWERADE MANZANA 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1001",
+    "nombre": "REGLA FLEXIBLE X 20CM ECONOMMIC (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1002",
+    "nombre": "REGLA FLEXIBLE X 30CM ECONOMMIC (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1003",
+    "nombre": "REGLA MAPED X15CM CELESTE (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1004",
+    "nombre": "REGLA MAPED X30CM (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1005",
+    "nombre": "REGLA TRANSPARENTE 15CM. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1006",
+    "nombre": "REGLA TRANSPARENTE 20 CM (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1007",
+    "nombre": "REGLA TRANSPARENTE 30 CM (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1008",
+    "nombre": "REPUESTO HOJAS CANSON N5 BLANCO ÉXITO X 8 HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1009",
+    "nombre": "REPUESTO HOJAS CANSON N5 COLOR X6 HOJAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1010",
+    "nombre": "REPUESTO HOJAS RAYADAS ÉXITO X 48 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1011",
+    "nombre": "REPUESTO HOJAS RIVADAVIA X48 N3 A4 (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1012",
+    "nombre": "REPUESTO HOJAS TRINGUNFANTE X24 UNID RAYADO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1013",
+    "nombre": "REPUESTO HOJAS TRIUNFANTE X48 UNID A4 RAYADO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1014",
+    "nombre": "RESALTADOR FILGO CHATO FLOU X 4UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1015",
+    "nombre": "RESALTADOR FILGO CHATO PASTEL X 4UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1016",
+    "nombre": "REX EN BOLSA 75GRS (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1017",
+    "nombre": "REX EN CAJA 125GRS (16)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1018",
+    "nombre": "RHODESIA (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1019",
+    "nombre": "ROCKLETS 20GRS (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1020",
+    "nombre": "ROCKLETS 40GRS (18)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1021",
+    "nombre": "ROCKLETS BOLLS (8)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-1022",
+    "nombre": "ROCKLETS BOLLS COOKIE (8)",
+    "proveedor": "PAMELI",
+    "pasillo": "4"
+  },
+  {
+    "id": "prod-1023",
+    "nombre": "SACAPUNTAS FILGO CIRCUS CON DEPOSITO X12UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1024",
+    "nombre": "SACAPUNTAS FILGO SPACE CON DEPOSITO X 24 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1025",
+    "nombre": "SACAPUNTAS FILGO X 72 UNID PLASTICO PINTO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1026",
+    "nombre": "SACAPUNTAS MAPED DE METAL (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1027",
+    "nombre": "SALADIX CROSS OROGINAL 67GRS (32)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1028",
+    "nombre": "SALADIX EN CAJA CALABRESA (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1029",
+    "nombre": "SALADIX EN CAJA DUO (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1030",
+    "nombre": "SALADIX EN CAJA EXTRA PICANTE (CELETE) (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1031",
+    "nombre": "SALADIX EN CAJA FUEGO (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1032",
+    "nombre": "SALADIX EN CAJA JAMON (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1033",
+    "nombre": "SALADIX EN CAJA PICANTE HORNEADO (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1034",
+    "nombre": "SALADIX EN CAJA PIZZA (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1035",
+    "nombre": "SALADIX EN TIRA 6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1036",
+    "nombre": "SALADIX EN TIRA CALABRESA (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1037",
+    "nombre": "SALADIX EN TIRA DUO (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1038",
+    "nombre": "SALADIX EN TIRA JAMON (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1039",
+    "nombre": "SALADIX EN TIRA PIZZA (6)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1040",
+    "nombre": "SAPITO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1041",
+    "nombre": "SAPITO BLANCO CRAZY (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1042",
+    "nombre": "SAPITO CHOCOLATE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1043",
+    "nombre": "SAPITO CHOCOLATE BLANCO (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1044",
+    "nombre": "SAPITO DULCE DE LECHE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1045",
+    "nombre": "SAPITO EXTREME (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1046",
+    "nombre": "SAPITO FRUTILLA (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1047",
+    "nombre": "SAPITO MANI (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1048",
+    "nombre": "SAPITO PICANTE (24)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1049",
+    "nombre": "SEVEN UP 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1050",
+    "nombre": "SEVEN UP EN LATA 354ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1051",
+    "nombre": "SEVEN UP FREE (SIN AZUCAR) 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1052",
+    "nombre": "SILICONA LIQUIDA 100CC (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1053",
+    "nombre": "SILICONA LIQUIDA 30CC (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1054",
+    "nombre": "SPRITE 500ML (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1055",
+    "nombre": "SPRITE EN LATA 354 (6)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1056",
+    "nombre": "SUGUS CONFITADOS CAJA AMARILLA (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1057",
+    "nombre": "TALITA URQUIZA CHEDDAR (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1058",
+    "nombre": "TALITA URQUIZA CLASICA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1059",
+    "nombre": "TALITA URQUIZA JAMON (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1060",
+    "nombre": "TALITA URQUIZA PIZZA (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1061",
+    "nombre": "TALITA URQUIZA QUESO (1)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1062",
+    "nombre": "TALITAS DON SATUR (20)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-1063",
+    "nombre": "TAPITAS - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-1064",
+    "nombre": "TEMBLEKE ASKIRATA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1065",
+    "nombre": "TEMBLEKE BRUJA (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1066",
+    "nombre": "TEMBLEKE COBRA (12)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1067",
+    "nombre": "TEMBLEKE DRACU LENGUA (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1068",
+    "nombre": "TEMBLEKE RELOJ (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1069",
+    "nombre": "TEMBLEKE SUPER ACIDO (10)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1070",
+    "nombre": "TEMBLEKE TIRA X 6UNID.  (6)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1071",
+    "nombre": "TEMPERA COLORES ALBA/ACUAREL X 10 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1072",
+    "nombre": "TEMPERA COLORES TINTORETO (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1073",
+    "nombre": "TIC TAC CITRUS (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1074",
+    "nombre": "TIC TAC FRUTILLA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1075",
+    "nombre": "TIC TAC MENTA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1076",
+    "nombre": "TIC TAC MENTA FRESCA (CELESTE) (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1077",
+    "nombre": "TIC TAC MIX FRUTAL (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1078",
+    "nombre": "TIC TAC NARANJA (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1079",
+    "nombre": "TIJERAS ESCOLAR FILGO CAJA 24 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1080",
+    "nombre": "TIJERAS ESCOLAR MAPED 13CM X24 UNID (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1081",
+    "nombre": "TIRA BIGGYS (1)",
+    "proveedor": "BIGGYS"
+  },
+  {
+    "id": "prod-1082",
+    "nombre": "TITA (36)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1083",
+    "nombre": "TIZAS FILGO X10 UNID BLANCAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1084",
+    "nombre": "TIZAS FILGO X10 UNID COLORES (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1085",
+    "nombre": "TIZAS GIOTTO BLANCAS X10 HIPOALERGENICAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1086",
+    "nombre": "TIZAS GIOTTO COLORES X10 HIPOALERGENICAS (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1087",
+    "nombre": "TOSTADITAS DE ARROZ QUENTO JAMON SIN TACC (32)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-1088",
+    "nombre": "TOSTADITAS DE ARROZ QUENTO QUESO SIN TACC (32)",
+    "proveedor": "QUENTO"
+  },
+  {
+    "id": "prod-1089",
+    "nombre": "TURRON ARCOR (50)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1090",
+    "nombre": "TURRON FULBITO (50)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1091",
+    "nombre": "TURRON MISKY (50)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1092",
+    "nombre": "TUTUCAS - CAPULLITO EN FLOR (24)",
+    "proveedor": "ARANJUEZ",
+    "pasillo": "3"
+  },
+  {
+    "id": "prod-1093",
+    "nombre": "TUTUCAS - NIKITOS (30)",
+    "proveedor": "PAMELI",
+    "pasillo": "FONDO"
+  },
+  {
+    "id": "prod-1094",
+    "nombre": "TUTUCAS BURBUJA (30)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1095",
+    "nombre": "VAUQUITA (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1096",
+    "nombre": "VAUQUITA LIGHT (18)",
+    "proveedor": "PAMELI",
+    "pasillo": "2"
+  },
+  {
+    "id": "prod-1097",
+    "nombre": "VOLIGOMA 30GRS X 12 UNID. (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1098",
+    "nombre": "VOLIGOMA X 50 GRS 12 UNIDADES (1)",
+    "proveedor": "LIBRERIA"
+  },
+  {
+    "id": "prod-1099",
+    "nombre": "XTREM (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1100",
+    "nombre": "XTREM BLUBERRY (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  },
+  {
+    "id": "prod-1101",
+    "nombre": "XTREM RAIBOW (12)",
+    "proveedor": "GOLOMAX",
+    "pasillo": "1"
+  }
+]
