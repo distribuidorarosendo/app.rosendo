@@ -243,9 +243,42 @@ function proveedorFiltroActual() {
   return el.proveedorFilter.value || '';
 }
 
+function renderItemBlock(item) {
+  const badge =
+    item.estado === 'pendiente'
+      ? 'badge pendiente'
+      : item.estado === 'comprado'
+        ? 'badge comprado'
+        : 'badge conseguido';
+  const label =
+    item.estado === 'pendiente'
+      ? 'Pendiente'
+      : item.estado === 'comprado'
+        ? 'Comprado'
+        : 'Conseguido';
+  const donde = item.donde ? `<span class="donde">${escapeHtml(item.donde)}</span>` : '';
+  const notas = item.notas ? `<p class="notas">${escapeHtml(item.notas)}</p>` : '';
+  return `
+    <div class="item-row" data-id="${item.id}">
+      <div class="item-row-main">
+        <h3 class="producto">${escapeHtml(item.producto)}</h3>
+        <span class="${badge}">${label}</span>
+      </div>
+      ${donde ? `<p class="meta-donde">📍 ${donde}</p>` : ''}
+      <p class="quien">Último cambio: <strong>${escapeHtml(item.quien || '—')}</strong></p>
+      ${notas}
+      <div class="acciones">
+        <button type="button" class="btn sm" data-act="pendiente" data-id="${item.id}">Pendiente</button>
+        <button type="button" class="btn sm primary" data-act="comprado" data-id="${item.id}">Compré</button>
+        <button type="button" class="btn sm accent" data-act="conseguido" data-id="${item.id}">Conseguí en…</button>
+        <button type="button" class="btn sm danger" data-act="eliminar" data-id="${item.id}">Eliminar</button>
+      </div>
+    </div>`;
+}
+
 function renderLista() {
   const filtro = proveedorFiltroActual();
-  let rows = itemsCache;
+  let rows = [...itemsCache];
   if (filtro) rows = rows.filter((i) => i.proveedor === filtro);
 
   if (rows.length === 0) {
@@ -254,41 +287,34 @@ function renderLista() {
     return;
   }
 
-  el.lista.innerHTML = rows
-    .map((item) => {
-      const badge =
-        item.estado === 'pendiente'
-          ? 'badge pendiente'
-          : item.estado === 'comprado'
-            ? 'badge comprado'
-            : 'badge conseguido';
-      const label =
-        item.estado === 'pendiente'
-          ? 'Pendiente'
-          : item.estado === 'comprado'
-            ? 'Comprado'
-            : 'Conseguido';
-      const donde = item.donde ? `<span class="donde">${escapeHtml(item.donde)}</span>` : '';
-      const notas = item.notas ? `<p class="notas">${escapeHtml(item.notas)}</p>` : '';
-      return `
-      <article class="card" data-id="${item.id}">
-        <div class="card-head">
-          <span class="${badge}">${label}</span>
-          <span class="prov-tag">${escapeHtml(item.proveedor)}</span>
-        </div>
-        <h3 class="producto">${escapeHtml(item.producto)}</h3>
-        ${donde ? `<p class="meta-donde">📍 ${donde}</p>` : ''}
-        <p class="quien">Último cambio: <strong>${escapeHtml(item.quien || '—')}</strong></p>
-        ${notas}
-        <div class="acciones">
-          <button type="button" class="btn sm" data-act="pendiente" data-id="${item.id}">Pendiente</button>
-          <button type="button" class="btn sm primary" data-act="comprado" data-id="${item.id}">Compré</button>
-          <button type="button" class="btn sm accent" data-act="conseguido" data-id="${item.id}">Conseguí en…</button>
-          <button type="button" class="btn sm danger" data-act="eliminar" data-id="${item.id}">Eliminar</button>
-        </div>
-      </article>`;
-    })
-    .join('');
+  rows.sort((a, b) => {
+    const p = (a.proveedor || '').localeCompare(b.proveedor || '', 'es');
+    if (p !== 0) return p;
+    return (a.producto || '').localeCompare(b.producto || '', 'es');
+  });
+
+  const byProv = new Map();
+  for (const item of rows) {
+    const p = (item.proveedor || '').trim() || '—';
+    if (!byProv.has(p)) byProv.set(p, []);
+    byProv.get(p).push(item);
+  }
+
+  const provKeys = [...byProv.keys()].sort((a, b) => a.localeCompare(b, 'es'));
+
+  let html = '';
+  for (const prov of provKeys) {
+    const items = byProv.get(prov);
+    html += `<section class="prov-section" aria-label="${escapeAttr(prov)}">`;
+    html += `<h2 class="prov-section-title">${escapeHtml(prov)}</h2>`;
+    html += `<div class="pasillo-sub">Pedido del día</div>`;
+    for (const item of items) {
+      html += renderItemBlock(item);
+    }
+    html += `</section>`;
+  }
+
+  el.lista.innerHTML = html;
 
   el.lista.querySelectorAll('button[data-act]').forEach((btn) => {
     btn.addEventListener('click', () => onAction(btn.dataset.act, btn.dataset.id));

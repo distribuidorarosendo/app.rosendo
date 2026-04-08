@@ -3,56 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pedidos por proveedor — Rosendo</title>
+  <title>Pedido del día — Rosendo</title>
   <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="theme-color" content="#303f9f" />
   <style>
     :root {
-      --bg: #0f1419;
-      --surface: #1a2332;
-      --border: #2d3a4d;
-      --text: #e8eef7;
-      --muted: #8b9cb3;
-      --accent: #3d8bfd;
-      --ok: #34c759;
-      --warn: #ff9f0a;
-      --danger: #ff453a;
+      --app-bar: #303f9f;
+      --app-bar-text: #fff;
+      --page-bg: #eceff1;
+      --surface: #fff;
+      --border: #e0e0e0;
+      --divider: #eeeeee;
+      --text: #212121;
+      --muted: #616161;
+      --accent: #3949ab;
+      --ok: #2e7d32;
+      --warn-bg: #fff8e1;
+      --warn-border: #ffcc80;
+      --danger: #c62828;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: var(--page-bg);
       color: var(--text);
       line-height: 1.45;
       min-height: 100vh;
     }
-    .wrap {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 1rem 1rem 3rem;
+    .app-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 56px;
+      padding: 0 0.35rem 0 0.25rem;
+      background: var(--app-bar);
+      color: var(--app-bar-text);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    header {
-      margin-bottom: 1.25rem;
-    }
-    header h1 {
+    .app-bar-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      color: inherit;
+      text-decoration: none;
       font-size: 1.35rem;
-      font-weight: 700;
-      margin: 0 0 0.35rem;
+      border-radius: 50%;
     }
-    header p {
+    .app-bar-back:hover { background: rgba(255,255,255,0.08); }
+    .app-bar-title {
+      flex: 1;
       margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding-right: 40px;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0.75rem 0.75rem 2rem;
+    }
+    .intro-line {
+      margin: 0 0 0.75rem;
+      font-size: 0.85rem;
       color: var(--muted);
-      font-size: 0.9rem;
     }
-    header a {
-      color: var(--accent);
-    }
+    .intro-line a { color: var(--accent); }
     .banner {
-      background: #2a1f0a;
-      border: 1px solid var(--warn);
-      border-radius: 10px;
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 8px;
       padding: 1rem 1.1rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--text);
     }
     .banner h2 {
       margin: 0 0 0.5rem;
@@ -65,10 +95,11 @@
       font-size: 0.88rem;
     }
     .banner code {
-      background: var(--surface);
+      background: #fff;
       padding: 0.1em 0.35em;
       border-radius: 4px;
       font-size: 0.85em;
+      border: 1px solid var(--border);
     }
     label {
       display: block;
@@ -79,19 +110,23 @@
     .pedido-dia {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem 1.1rem;
-      margin-bottom: 1.25rem;
+      border-radius: 8px;
+      padding: 1rem 1rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
     }
     .pedido-dia h2 {
       margin: 0 0 0.35rem;
-      font-size: 1.15rem;
+      font-size: 1rem;
       font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--text);
     }
     .pedido-dia .literal-fecha {
-      margin: 0 0 1rem;
+      margin: 0 0 0.85rem;
       color: var(--accent);
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 600;
       text-transform: capitalize;
     }
@@ -108,20 +143,20 @@
     input[type="date"] {
       width: 100%;
       max-width: 220px;
-      padding: 0.55rem 0.65rem;
-      border-radius: 8px;
+      padding: 0.5rem 0.6rem;
+      border-radius: 6px;
       border: 1px solid var(--border);
-      background: var(--surface);
+      background: #fafafa;
       color: var(--text);
       font-size: 1rem;
     }
     input[type="text"],
     select {
       width: 100%;
-      padding: 0.55rem 0.65rem;
-      border-radius: 8px;
+      padding: 0.5rem 0.6rem;
+      border-radius: 6px;
       border: 1px solid var(--border);
-      background: var(--surface);
+      background: #fafafa;
       color: var(--text);
       font-size: 1rem;
     }
@@ -137,90 +172,126 @@
     }
     .btn {
       border: none;
-      border-radius: 8px;
-      padding: 0.55rem 0.9rem;
-      font-size: 0.95rem;
+      border-radius: 6px;
+      padding: 0.5rem 0.85rem;
+      font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
-      background: var(--border);
+      background: #e0e0e0;
       color: var(--text);
     }
-    .btn:hover { filter: brightness(1.08); }
-    .btn.primary { background: var(--ok); color: #0a0a0a; }
+    .btn:hover { filter: brightness(0.97); }
+    .btn.primary { background: var(--ok); color: #fff; }
+    .btn.primary:hover { filter: brightness(1.05); }
     .btn.accent { background: var(--accent); color: #fff; }
     .btn.danger { background: transparent; color: var(--danger); border: 1px solid var(--danger); }
-    .btn.sm { padding: 0.35rem 0.6rem; font-size: 0.82rem; }
+    .btn.sm { padding: 0.3rem 0.5rem; font-size: 0.78rem; }
     .toolbar {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
     #status-conn {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--muted);
       margin-left: auto;
     }
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem 1.1rem;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
       margin-bottom: 0.75rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
     }
-    .card-head {
+    .prov-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+    .prov-section-title {
+      margin: 0;
+      padding: 0.75rem 1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      background: #f5f5f5;
+      border-bottom: 1px solid var(--divider);
+      color: var(--text);
+    }
+    .pasillo-sub {
+      padding: 0.45rem 1rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--muted);
+      background: #fafafa;
+      border-bottom: 1px solid var(--divider);
+    }
+    .item-row {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid var(--divider);
+    }
+    .item-row:last-child { border-bottom: none; }
+    .item-row-main {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .item-row .producto {
+      font-size: 0.95rem;
+      margin: 0;
+      font-weight: 500;
+      flex: 1;
+      line-height: 1.35;
     }
     .badge {
-      font-size: 0.72rem;
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 0.2rem 0.5rem;
-      border-radius: 6px;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .badge.pendiente { background: #3d3d3d; color: #ccc; }
-    .badge.comprado { background: #1a3d28; color: #8fefa8; }
-    .badge.conseguido { background: #1a2d4d; color: #9ec5ff; }
-    .prov-tag {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    .producto {
-      font-size: 1.05rem;
-      margin: 0 0 0.35rem;
-      font-weight: 600;
-    }
+    .badge.pendiente { background: #eeeeee; color: #424242; }
+    .badge.comprado { background: #e8f5e9; color: #1b5e20; }
+    .badge.conseguido { background: #e3f2fd; color: #0d47a1; }
     .meta-donde, .quien {
-      font-size: 0.88rem;
-      margin: 0.25rem 0;
+      font-size: 0.8rem;
+      margin: 0.35rem 0 0;
       color: var(--muted);
     }
     .donde { color: var(--accent); font-weight: 600; }
     .notas {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--muted);
-      margin: 0.35rem 0;
+      margin: 0.25rem 0 0;
       font-style: italic;
     }
     .acciones {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.75rem;
+      gap: 0.35rem;
+      margin-top: 0.55rem;
     }
     .empty {
       text-align: center;
       color: var(--muted);
       padding: 2rem 1rem;
+      background: var(--surface);
+      border-radius: 8px;
+      border: 1px dashed var(--border);
     }
     .hint {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--muted);
       margin-top: 0.35rem;
     }
@@ -232,8 +303,8 @@
       align-items: center;
       justify-content: center;
       padding: 1rem;
-      background: rgba(8, 12, 18, 0.92);
-      backdrop-filter: blur(6px);
+      background: rgba(38, 50, 56, 0.55);
+      backdrop-filter: blur(4px);
     }
     .nombre-gate[hidden] {
       display: none !important;
@@ -243,13 +314,14 @@
       max-width: 400px;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 12px;
       padding: 1.35rem 1.25rem 1.25rem;
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     }
     .nombre-gate-dialog h2 {
       margin: 0 0 0.35rem;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
+      color: var(--text);
     }
     .nombre-gate-dialog > p {
       margin: 0 0 1rem;
@@ -273,9 +345,7 @@
       text-decoration: underline;
       font-family: inherit;
     }
-    .link-cambiar:hover {
-      color: #6eb0ff;
-    }
+    .link-cambiar:hover { color: #1a237e; }
     .nombre-row-head {
       display: flex;
       flex-wrap: wrap;
@@ -320,11 +390,16 @@
     })();
   </script>
 
+  <header class="app-bar">
+    <a href="/" class="app-bar-back" aria-label="Volver al depósito">←</a>
+    <h1 class="app-bar-title">PEDIDO DEL DÍA</h1>
+  </header>
+
   <div class="wrap">
-    <header>
-      <h1>Pedido del equipo</h1>
-      <p>Acá editan todos el mismo pedido del día (no hace falta recompilar la app). <a href="/">Volver a depósito</a></p>
-    </header>
+    <p class="intro-line">
+      Misma idea que el resumen por proveedor de la app, pero acá el equipo edita el pedido del día.
+      <a href="/">Depósito</a>
+    </p>
 
     <div id="setup-banner" class="banner" hidden>
       <h2>Configuración o servidor</h2>
@@ -338,7 +413,7 @@
 
     <div id="app" hidden>
       <div class="pedido-dia">
-        <h2>Pedido del día</h2>
+        <h2>Fecha del pedido</h2>
         <p id="literal-fecha" class="literal-fecha" aria-live="polite"></p>
         <div class="fecha-row">
           <div>
@@ -348,7 +423,7 @@
           <button type="button" class="btn" id="btn-hoy">Hoy</button>
         </div>
         <p class="hint" style="margin-top: 0.75rem; margin-bottom: 0;">
-          Los ítems que agregues quedan guardados para <strong>esa fecha</strong>. El resumen por proveedor de la app Flutter es otra pantalla (solo lectura desde el catálogo).
+          Los ítems quedan guardados para <strong>esa fecha</strong>. La lista de abajo se agrupa por proveedor como en «Resumen por proveedor».
         </p>
       </div>
 
@@ -386,6 +461,9 @@
         <p class="hint">La lista se actualiza sola cada unos segundos para que el equipo vea los cambios sin recargar.</p>
       </div>
 
+      <p class="intro-line" style="margin-bottom: 0.35rem; font-weight: 600; color: var(--text);">
+        Lista por proveedor
+      </p>
       <section id="lista" aria-live="polite"></section>
     </div>
   </div>
