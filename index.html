@@ -1,46 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="app_compras_rosendo">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>app_compras_rosendo</title>
-  <link rel="manifest" href="manifest.json">
+  <base href="/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Depósito — pedido y remito, Distribuidora Rosendo" />
+  <title>DEPÓSITO — Rosendo</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1a237e" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Depósito Rosendo" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+  <link rel="stylesheet" href="css/deposito.css" />
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <div id="qty-modal" class="qty-modal" hidden role="dialog" aria-modal="true" aria-labelledby="qty-modal-title">
+    <button type="button" class="qty-modal-backdrop" id="qty-modal-backdrop" aria-label="Cerrar"></button>
+    <div class="qty-modal-box">
+      <h2 id="qty-modal-title" class="qty-modal-title"></h2>
+      <label for="qty-input">Cantidad</label>
+      <input type="number" id="qty-input" min="1" max="999" value="1" inputmode="numeric" />
+      <p id="qty-modal-hint" class="hint qty-modal-hint"></p>
+      <div class="qty-modal-actions">
+        <button type="button" class="btn-main secondary" id="qty-cancel">Cancelar</button>
+        <button type="button" class="btn-main" id="qty-confirm">Agregar al pedido</button>
+      </div>
+    </div>
+  </div>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+  <div id="nombre-gate" class="nombre-gate" role="dialog" aria-modal="true" aria-labelledby="ng-title">
+    <div class="nombre-gate-dialog">
+      <h2 id="ng-title">¿Quién sos?</h2>
+      <p class="hint" style="margin-top: 0">Así queda registrado quién marca el pedido del día.</p>
+      <label for="nombre-inicial">Nombre</label>
+      <input type="text" id="nombre-inicial" maxlength="80" placeholder="Ej. Ana, Luis…" autocomplete="name" />
+      <p id="nombre-gate-error" class="nombre-gate-error" role="alert"></p>
+      <button type="button" class="btn-main" id="btn-nombre-ok" style="margin-top: 0.5rem">Continuar</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var g = document.getElementById('nombre-gate');
+      var a = document.getElementById('shell');
+      try {
+        var n = localStorage.getItem('pedidos_rosendo_nombre');
+        if (n && String(n).trim()) {
+          g.hidden = true;
+          a.hidden = false;
+        } else {
+          g.hidden = false;
+          a.hidden = true;
+        }
+      } catch (e) {
+        a.hidden = true;
+      }
+    })();
+  </script>
+
+  <div id="shell" class="app-shell" hidden>
+    <button type="button" id="sidebar-backdrop" class="sidebar-backdrop" aria-label="Cerrar menú"></button>
+
+    <aside id="sidebar" class="sidebar" aria-label="Menú de navegación">
+      <p class="sidebar-heading">MENÚ NAVEGACIÓN</p>
+      <div class="sidebar-mini-stats">
+        <div class="sidebar-stat">
+          <span class="sidebar-stat-lbl">TOTAL ÍTEMS</span>
+          <span class="sidebar-stat-num" id="sidebar-items">0</span>
+        </div>
+        <div class="sidebar-stat">
+          <span class="sidebar-stat-lbl">PRODUCTOS</span>
+          <span class="sidebar-stat-num" id="sidebar-productos">0</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <button type="button" class="nav-item active" data-nav="home" id="nav-home"><span class="nav-ic">⌂</span> Inicio</button>
+        <button type="button" class="nav-item" data-nav="nuevo" id="nav-nuevo"><span class="nav-ic">🛒</span> Nuevo pedido</button>
+        <button type="button" class="nav-item" data-nav="buscar" id="nav-buscar"><span class="nav-ic">🔍</span> Buscar productos</button>
+        <button type="button" class="nav-item" data-nav="productos" id="nav-productos"><span class="nav-ic">📦</span> Productos</button>
+        <button type="button" class="nav-item" data-nav="proveedores" id="nav-proveedores"><span class="nav-ic">🏷</span> Proveedores</button>
+        <button type="button" class="nav-item" data-nav="lista" id="nav-lista"><span class="nav-ic">☰</span> Lista de pedido</button>
+        <button type="button" class="nav-item" data-nav="resumen" id="nav-resumen"><span class="nav-ic">▤</span> Resumen por proveedor</button>
+        <button type="button" class="nav-item" data-nav="remito" id="nav-remito"><span class="nav-ic">📄</span> Remito</button>
+        <span class="nav-item nav-item-disabled"><span class="nav-ic">⚙</span> Configuración (próximamente)</span>
+        <span class="nav-item nav-item-disabled"><span class="nav-ic">?</span> Ayuda (próximamente)</span>
+      </nav>
+      <p class="sidebar-version">REPASO DEPÓSITO V 1.0</p>
+    </aside>
+
+    <div class="layout-main">
+      <div id="setup-banner" class="setup-banner" hidden></div>
+
+      <header class="topbar">
+        <button type="button" class="topbar-menu" id="btn-menu" aria-label="Abrir menú">☰</button>
+        <button type="button" class="topbar-back" id="btn-back" hidden aria-label="Volver al inicio">←</button>
+        <div class="topbar-titles">
+          <h1 class="topbar-title" id="bar-title">DEPÓSITO</h1>
+          <p class="topbar-sub" id="bar-sub">Sistema de restock</p>
+        </div>
+        <div class="topbar-user" aria-hidden="true">👤</div>
+      </header>
+
+      <main class="app-body">
+        <section id="view-home" class="view">
+          <p class="hint home-buscar-hint">
+            Para agregar por nombre usá <strong>Nuevo pedido</strong> o <strong>Buscar productos</strong> en el menú.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-card">
+              <p class="lbl">ITEMS</p>
+              <p class="stat-ic">📦</p>
+              <p class="num" id="stat-items">0</p>
+            </div>
+            <div class="stat-card">
+              <p class="lbl">UNIDADES</p>
+              <p class="stat-ic">📊</p>
+              <p class="num" id="stat-unidades">0</p>
+            </div>
+          </div>
+
+          <p class="hint limite-msg">
+            En el servidor: <strong>hasta 10 líneas por día</strong> (plan gratis). La 11.ª reemplaza la más vieja de ese día.
+          </p>
+
+          <div class="actions-stack">
+            <button type="button" class="btn-main" id="btn-focus-buscar"><span class="btn-ic">🛒</span> NUEVO PEDIDO</button>
+            <button type="button" class="btn-main secondary" id="go-lista"><span class="btn-ic">☰</span> VER LISTA DE PEDIDO</button>
+            <button type="button" class="btn-main secondary" id="go-resumen"><span class="btn-ic">▤</span> RESUMEN POR PROVEEDOR</button>
+            <button type="button" class="btn-main secondary" id="go-remito"><span class="btn-ic">📄</span> REMITO (borrador)</button>
+          </div>
+
+          <p class="hint" id="nombre-line" style="margin-top: 1rem"></p>
+          <p class="hint">Remito: solo en este navegador (hasta 10 guardados).</p>
+        </section>
+
+        <section id="view-buscar" class="view view-buscar" hidden>
+          <div class="search-block search-block-buscar">
+            <label for="q" class="visually-hidden">Buscar producto</label>
+            <div class="search-input-wrap search-input-wrap--pill">
+              <span class="search-ic" aria-hidden="true">🔍</span>
+              <input type="search" id="q" placeholder="Nombre del producto…" autocomplete="off" />
+            </div>
+          </div>
+          <ul id="search-results" class="results-list results-list--buscar" hidden></ul>
+          <p id="search-empty" class="hint search-empty-buscar" hidden>No hay coincidencias. Probá otra palabra.</p>
+          <div id="buscar-footer-nuevo" class="buscar-sticky-footer" hidden>
+            <button type="button" class="btn-ver-pedido" id="btn-ver-pedido-nuevo">
+              ☰ Ver pedido (<span id="buscar-pedido-count">0</span>)
+            </button>
+          </div>
+        </section>
+
+        <section id="view-productos" class="view view-catalog" hidden>
+          <p class="hint">
+            Catálogo: cambios en <strong>nombre, proveedor, pasillo, marca y categoría</strong> se guardan en este navegador (el JSON base no se modifica en el servidor).
+            Tocá una fila para editar; <strong>+</strong> agrega al pedido.
+          </p>
+          <div class="search-block">
+            <label for="q-productos">Filtrar</label>
+            <div class="search-input-wrap">
+              <span class="search-ic" aria-hidden="true">🔍</span>
+              <input type="search" id="q-productos" placeholder="Buscar por nombre, proveedor, pasillo…" autocomplete="off" />
+            </div>
+          </div>
+          <p id="productos-caption" class="hint catalog-caption" hidden></p>
+          <ul id="productos-list" class="results-list results-list--catalog"></ul>
+          <p id="productos-empty" class="hint" hidden>No hay coincidencias.</p>
+          <button type="button" class="fab-add-product" id="fab-nuevo-producto" aria-label="Nuevo producto">+</button>
+        </section>
+
+        <section id="view-producto-edit" class="view view-producto-edit" hidden>
+          <p class="hint producto-edit-hint">Los cambios aplican solo en este dispositivo.</p>
+          <form id="form-producto-edit" class="producto-edit-form" novalidate>
+            <input type="hidden" id="pe-id" value="" />
+            <div class="producto-field">
+              <label for="pe-nombre">Nombre <span class="req">*</span></label>
+              <input type="text" id="pe-nombre" required maxlength="500" autocomplete="off" />
+            </div>
+            <div class="producto-field">
+              <label for="pe-proveedor">Proveedor <span class="req">*</span></label>
+              <input type="text" id="pe-proveedor" required maxlength="200" autocomplete="off" />
+            </div>
+            <div class="producto-field">
+              <label for="pe-pasillo">Pasillo / sector (opcional)</label>
+              <input type="text" id="pe-pasillo" maxlength="80" autocomplete="off" />
+            </div>
+            <div class="producto-field">
+              <label for="pe-marca">Marca (opcional)</label>
+              <input type="text" id="pe-marca" maxlength="120" autocomplete="off" />
+            </div>
+            <div class="producto-field">
+              <label for="pe-categoria">Categoría (opcional)</label>
+              <input type="text" id="pe-categoria" maxlength="120" autocomplete="off" />
+            </div>
+            <button type="submit" class="btn-main btn-guardar-producto" id="btn-guardar-producto">GUARDAR CAMBIOS</button>
+          </form>
+        </section>
+
+        <section id="view-proveedores" class="view view-catalog" hidden>
+          <p class="hint">Proveedores del catálogo. Desplegá cada uno para ver productos y agregarlos al pedido.</p>
+          <div class="search-block">
+            <label for="q-proveedores">Filtrar proveedores</label>
+            <div class="search-input-wrap">
+              <span class="search-ic" aria-hidden="true">🔍</span>
+              <input type="search" id="q-proveedores" placeholder="Nombre del proveedor…" autocomplete="off" />
+            </div>
+          </div>
+          <div id="proveedores-mount"></div>
+        </section>
+
+        <section id="view-lista" class="view view-lista-page" hidden>
+          <p class="hint">Pedido del <strong id="lista-fecha-lbl"></strong>. Sincronización ~8 s.</p>
+          <div id="lista-mount"></div>
+          <button type="button" class="btn-limpiar-lista" id="btn-limpiar-lista" hidden>LIMPIAR LISTA</button>
+        </section>
+
+        <section id="view-resumen" class="view view-resumen-page" hidden>
+          <p class="hint resumen-export-hint">
+            Desde el celular: si no podés imprimir acá, tocá <strong>Enviar PDF</strong> para compartir por WhatsApp, mail o Drive; también podés
+            <strong>copiar</strong> el texto o bajar el <strong>Excel (.csv)</strong>. En la PC: vista previa e imprimir, o guardar como PDF desde el diálogo de impresión.
+          </p>
+          <div id="resumen-mount"></div>
+          <div id="resumen-actions" class="resumen-export-stack" hidden>
+            <button type="button" class="btn-main" id="btn-resumen-share-pdf">📤 Enviar PDF (para abrir en la PC / WhatsApp)</button>
+            <button type="button" class="btn-main secondary" id="btn-resumen-print">🖨 Vista previa / imprimir en este dispositivo</button>
+            <button type="button" class="btn-main secondary" id="btn-resumen-csv">📊 Excel (.csv) — compartir / guardar</button>
+            <button type="button" class="btn-main" id="btn-resumen-copy">📋 Copiar al portapapeles</button>
+            <button type="button" class="btn-main secondary" id="btn-resumen-share-text">↗ Compartir como texto</button>
+          </div>
+        </section>
+
+        <section id="view-remito" class="view" hidden>
+          <p class="hint">Borrador local: al guardar se guardan hasta <strong>10</strong> versiones en el navegador (se descarta la más antigua). «Copiar desde pedido» trae las líneas de hoy.</p>
+          <div class="lista-actions" style="margin-bottom: 0.65rem">
+            <button type="button" class="btn-sm accent" id="btn-remito-desde-pedido">Copiar desde pedido de hoy</button>
+          </div>
+          <textarea id="remito-text" class="remito-text" placeholder="Escribí o pegá el remito…"></textarea>
+          <div class="lista-actions" style="margin-top: 0.65rem">
+            <button type="button" class="btn-main secondary" id="btn-remito-guardar">Guardar borrador</button>
+            <button type="button" class="btn-main" id="btn-remito-print">Imprimir</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-summary" id="footer-stats">0 PRODUCTOS — 0 UNIDADES</footer>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>

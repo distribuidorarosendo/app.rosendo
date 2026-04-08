@@ -3,6 +3,9 @@ import { neon } from '@neondatabase/serverless';
 const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
 const sql = connectionString ? neon(connectionString) : null;
 
+/** Máximo de filas por día (plan gratis: poca carga en Neon). Al agregar uno más, se borran las más viejas del mismo día. */
+const MAX_ITEMS_POR_DIA = 10;
+
 function sendJson(res, status, obj) {
   res.statusCode = status;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -89,9 +92,33 @@ export default async function handler(req, res) {
       if (!proveedor || !producto) {
         return sendJson(res, 400, { error: 'proveedor y producto son obligatorios' });
       }
+
+      let cantidad = 1;
+      if (body.cantidad != null) {
+        const c = parseInt(body.cantidad, 10);
+        if (!Number.isNaN(c) && c >= 1 && c <= 999) cantidad = c;
+      }
+
+      const cntRows = await sql`
+        SELECT COUNT(*)::int AS c FROM items_pedido WHERE fecha_pedido = ${fechaPedido}::date
+      `;
+      const cuenta = Number(cntRows[0]?.c ?? 0);
+      const aBorrar = Math.max(0, cuenta + 1 - MAX_ITEMS_POR_DIA);
+      if (aBorrar > 0) {
+        await sql`
+          DELETE FROM items_pedido
+          WHERE id IN (
+            SELECT id FROM items_pedido
+            WHERE fecha_pedido = ${fechaPedido}::date
+            ORDER BY created_at ASC
+            LIMIT ${aBorrar}
+          )
+        `;
+      }
+
       const rows = await sql`
-        INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas)
-        VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '')
+        INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas, cantidad)
+        VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '', ${cantidad})
         RETURNING *
       `;
       return sendJson(res, 201, rows[0]);
@@ -103,12 +130,26 @@ export default async function handler(req, res) {
         return sendJson(res, 400, { error: 'Falta ?id=' });
       }
       const body = await parseBody(req);
-      const estado = body.estado;
-      const donde = body.donde != null ? String(body.donde) : '';
-      const quien = body.quien != null ? String(body.quien) : '';
-      const notas = body.notas != null ? String(body.notas) : '';
+      const curRows = await sql`
+        SELECT estado, donde, quien, notas, cantidad FROM items_pedido WHERE id = ${id}::uuid
+      `;
+      if (!curRows.length) {
+        return sendJson(res, 404, { error: 'No encontrado' });
+      }
+      const cur = curRows[0];
+      let estado = body.estado != null ? body.estado : cur.estado;
       if (!['pendiente', 'comprado', 'conseguido'].includes(estado)) {
         return sendJson(res, 400, { error: 'estado inválido' });
+      }
+      const donde = body.donde != null ? String(body.donde) : String(cur.donde ?? '');
+      const quien = body.quien != null ? String(body.quien) : String(cur.quien ?? '');
+      const notas = body.notas != null ? String(body.notas) : String(cur.notas ?? '');
+      let cantidad =
+        cur.cantidad != null && cur.cantidad !== '' ? Number(cur.cantidad) : 1;
+      if (Number.isNaN(cantidad) || cantidad < 1) cantidad = 1;
+      if (body.cantidad != null) {
+        const c = parseInt(body.cantidad, 10);
+        if (!Number.isNaN(c) && c >= 1 && c <= 999) cantidad = c;
       }
       const rows = await sql`
         UPDATE items_pedido
@@ -117,6 +158,7 @@ export default async function handler(req, res) {
           donde = ${donde},
           quien = ${quien},
           notas = ${notas},
+          cantidad = ${cantidad},
           updated_at = NOW()
         WHERE id = ${id}::uuid
         RETURNING *
@@ -124,7 +166,28 @@ export default async function handler(req, res) {
       if (!rows.length) {
         return sendJson(res, 404, { error: 'No encontrado' });
       }
-      return sendJson(res, 200, rows[0]);
+      const updated = rows[0];
+
+      /* Mismo producto en varios mayoristas el mismo día: si uno compra / consigue,
+         el resto de filas con el mismo texto de producto pasan al mismo estado
+         para que nadie duplique la compra. */
+      if (estado === 'comprado' || estado === 'conseguido') {
+        const fechaStr = String(updated.fecha_pedido).slice(0, 10);
+        const prod = String(updated.producto || '');
+        await sql`
+          UPDATE items_pedido
+          SET
+            estado = ${estado},
+            donde = ${donde},
+            quien = ${quien},
+            updated_at = NOW()
+          WHERE fecha_pedido = ${fechaStr}::date
+            AND id <> ${id}::uuid
+            AND lower(trim(producto)) = lower(trim(${prod}))
+        `;
+      }
+
+      return sendJson(res, 200, updated);
     }
 
     if (req.method === 'DELETE') {
@@ -153,6 +216,16 @@ export default async function handler(req, res) {
         code: 'MIGRACION',
         message:
           'Falta la columna fecha_pedido. Ejecutá vercel-postgres-migration-fecha-pedido.sql en Neon y recargá.',
+      });
+    }
+    if (
+      low.includes('cantidad') &&
+      (low.includes('column') || low.includes('does not exist'))
+    ) {
+      return sendJson(res, 503, {
+        code: 'MIGRACION_CANTIDAD',
+        message:
+          'Falta la columna cantidad. Ejecutá vercel-postgres-migration-cantidad.sql en Neon y redeploy.',
       });
     }
     if (low.includes('relation') && low.includes('does not exist')) {

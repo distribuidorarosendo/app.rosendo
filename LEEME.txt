@@ -1,20 +1,15 @@
-Carpeta lista para subir a cualquier hosting (Netlify, Firebase, tu servidor, etc.).
-Generada con: flutter build web --release y copia de build/web.
+Carpeta para Vercel / hosting estático + API serverless.
 
-Probar en la PC (hace falta un servidor HTTP; no abras solo index.html con doble clic):
-  PowerShell, dentro de esta carpeta:
-    python -m http.server 8080
-  Luego en el navegador: http://localhost:8080
+Entrada principal: index.html (depósito en HTML/JS: búsqueda, pedido del día vía API, lista, resumen, remito borrador).
+  - js/app.js + js/pedidos-api.js + css/deposito.css
+  - Catálogo: assets/assets/data/productos_inicial.json (edición de productos en el navegador: localStorage rosendo_catalog_*)
 
-En el iPhone: subí esta carpeta al hosting y abrí la URL en Safari; podés "Añadir a pantalla de inicio".
+Backend: api/pedidos.js + Postgres (Neon). SQL: vercel-postgres-schema.sql, migración fecha si aplica, y vercel-postgres-migration-cantidad.sql (columna cantidad por línea).
+Límite para cuidar el plan gratis: como máximo 10 filas por día en items_pedido; al insertar la 11.ª se borran las más viejas de ese mismo día.
 
-Nota: en web el catálogo viene del JSON embebido; los cambios en "Productos" no se guardan entre sesiones como en la app Android.
+pedidos.html y deposito.html redirigen a / por si quedaron enlaces viejos.
 
-Pedidos colaborativos — vista "Pedido del día" (por fecha, varias personas editan):
-  URL: /pedidos.html
-  API: /api/pedidos + Postgres (Neon) en Vercel. Si la tabla ya existía: corré vercel-postgres-migration-fecha-pedido.sql.
-  El resumen por proveedor de la app Flutter es independiente; para editar el pedido del equipo usá esta página o enlazala desde Flutter.
+IMPORTANTE: si volvés a copiar solo "flutter build web" encima de esta carpeta, te va a pisar index.html con la app Flutter.
+  Guardá una copia de index.html / js/app.js o fusioná a mano. Ideal: en el repo Flutter no pisar estos archivos al deploy, o generar build en otra carpeta.
 
-Para regenerar esta carpeta desde el proyecto Flutter:
-  flutter build web --release
-  (y volver a copiar build/web aquí o ejecutar el script del proyecto si se agrega uno)
+Probar en local: servidor HTTP en esta carpeta (no abras file://).
