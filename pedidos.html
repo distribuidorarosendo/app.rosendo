@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedidos por proveedor — Rosendo</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --border: #2d3a4d;
+      --text: #e8eef7;
+      --muted: #8b9cb3;
+      --accent: #3d8bfd;
+      --ok: #34c759;
+      --warn: #ff9f0a;
+      --danger: #ff453a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1rem 1rem 3rem;
+    }
+    header {
+      margin-bottom: 1.25rem;
+    }
+    header h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    header a {
+      color: var(--accent);
+    }
+    .banner {
+      background: #2a1f0a;
+      border: 1px solid var(--warn);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+    .banner h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+    }
+    .banner ol {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .banner code {
+      background: var(--surface);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 0.55rem 0.65rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .row {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 520px) {
+      .row.cols-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 0.55rem 0.9rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--border);
+      color: var(--text);
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .btn.primary { background: var(--ok); color: #0a0a0a; }
+    .btn.accent { background: var(--accent); color: #fff; }
+    .btn.danger { background: transparent; color: var(--danger); border: 1px solid var(--danger); }
+    .btn.sm { padding: 0.35rem 0.6rem; font-size: 0.82rem; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    #status-conn {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: auto;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .card-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+    }
+    .badge.pendiente { background: #3d3d3d; color: #ccc; }
+    .badge.comprado { background: #1a3d28; color: #8fefa8; }
+    .badge.conseguido { background: #1a2d4d; color: #9ec5ff; }
+    .prov-tag {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .producto {
+      font-size: 1.05rem;
+      margin: 0 0 0.35rem;
+      font-weight: 600;
+    }
+    .meta-donde, .quien {
+      font-size: 0.88rem;
+      margin: 0.25rem 0;
+      color: var(--muted);
+    }
+    .donde { color: var(--accent); font-weight: 600; }
+    .notas {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0.35rem 0;
+      font-style: italic;
+    }
+    .acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+    .empty {
+      text-align: center;
+      color: var(--muted);
+      padding: 2rem 1rem;
+    }
+    .hint {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Pedidos por proveedor</h1>
+      <p>Lista compartida (sincronizada cada pocos segundos) · <a href="/">Volver a la app</a></p>
+    </header>
+
+    <div id="setup-banner" class="banner" hidden>
+      <h2>Configuración o servidor</h2>
+      <p id="setup-detail" style="margin: 0 0 0.75rem; color: var(--muted); font-size: 0.9rem;"></p>
+      <ol>
+        <li>En <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> → tu proyecto → <strong>Storage</strong> → creá o conectá <strong>Postgres</strong> (suele ser <strong>Neon</strong>, con capa gratuita).</li>
+        <li>En el SQL Editor de esa base, ejecutá el contenido de <code>vercel-postgres-schema.sql</code>.</li>
+        <li>Hacé un nuevo deploy (push a GitHub o “Redeploy”). La API vive en <code>/api/pedidos</code>; no hace falta ningún archivo de claves en el front.</li>
+      </ol>
+    </div>
+
+    <div id="app">
+      <div class="row">
+        <div>
+          <label for="nombre">Tu nombre (para que el equipo sepa quién marcó)</label>
+          <input type="text" id="nombre" placeholder="Ej. Ana, Luis…" autocomplete="name" />
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div style="flex: 1; min-width: 200px;">
+          <label for="proveedor-filter">Filtrar por proveedor</label>
+          <select id="proveedor-filter"></select>
+        </div>
+        <button type="button" class="btn" id="btn-recargar-proveedores" title="Recargar lista desde el catálogo JSON">Sincronizar proveedores</button>
+        <span id="status-conn"></span>
+      </div>
+
+      <div class="card" style="margin-bottom: 1.25rem;">
+        <label for="proveedor-nuevo">Agregar al pedido</label>
+        <div class="row cols-2" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+          <div>
+            <select id="proveedor-nuevo"></select>
+          </div>
+          <div>
+            <input type="text" id="producto-nuevo" placeholder="Producto (ej. Alfajor Águila clásico)" />
+          </div>
+        </div>
+        <button type="button" class="btn primary" id="btn-agregar">Agregar ítem</button>
+        <p class="hint">La lista se actualiza sola cada unos segundos para que el equipo vea los cambios sin recargar.</p>
+      </div>
+
+      <section id="lista" aria-live="polite"></section>
+    </div>
+  </div>
+
+  <script type="module" src="js/pedidos.js"></script>
+</body>
+</html>
