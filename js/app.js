@@ -10,9 +10,6 @@ import {
 } from './pedidos-api.js';
 
 const CATALOG_URL = 'assets/assets/data/productos_inicial.json';
-const LS_REMITO = 'rosendo_remito_borrador';
-const LS_REMITO_HISTORIAL = 'rosendo_remito_historial';
-const REMITO_HISTORIAL_MAX = 10;
 const POLL_MS = 8000;
 
 let catalog = [];
@@ -421,14 +418,14 @@ function openProductEdit(id) {
   showView('producto-edit', { isNew: false });
 }
 
-function openNewProduct() {
+function openNewProduct(opts = {}) {
   el('pe-id').value = '';
   el('pe-nombre').value = '';
   el('pe-proveedor').value = '';
   el('pe-pasillo').value = '';
   el('pe-marca').value = '';
   el('pe-categoria').value = '';
-  showView('producto-edit', { isNew: true });
+  showView('producto-edit', { isNew: true, focusProveedor: !!opts.focusProveedor });
 }
 
 async function saveProductCatalogFromForm(e) {
@@ -503,7 +500,6 @@ function showView(v, opts = {}) {
   el('view-proveedores').hidden = v !== 'proveedores';
   el('view-lista').hidden = v !== 'lista';
   el('view-resumen').hidden = v !== 'resumen';
-  el('view-remito').hidden = v !== 'remito';
   const shell = el('shell');
   if (shell) {
     shell.classList.toggle('view-buscar', v === 'buscar');
@@ -541,6 +537,9 @@ function showView(v, opts = {}) {
     el('bar-title').textContent = opts.isNew ? 'NUEVO PRODUCTO' : 'EDITAR PRODUCTO';
     sub.hidden = true;
     syncSidebarNav('productos');
+    if (opts.focusProveedor) {
+      queueMicrotask(() => el('pe-proveedor').focus());
+    }
   } else if (v === 'proveedores') {
     el('bar-title').textContent = 'PROVEEDORES';
     sub.textContent = 'Catálogo';
@@ -559,11 +558,6 @@ function showView(v, opts = {}) {
     sub.hidden = false;
     renderResumen();
     syncSidebarNav('resumen');
-  } else if (v === 'remito') {
-    el('bar-title').textContent = 'REMITO';
-    sub.hidden = true;
-    el('remito-text').value = localStorage.getItem(LS_REMITO) || '';
-    syncSidebarNav('remito');
   }
   closeSidebar();
 }
@@ -571,30 +565,21 @@ function showView(v, opts = {}) {
 function renderLista() {
   const mount = el('lista-mount');
   const btnLimpiar = el('btn-limpiar-lista');
+  const btnRes = el('btn-lista-a-resumen');
   if (itemsToday.length === 0) {
     mount.innerHTML =
       '<p class="empty-msg">No hay ítems hoy. Usá <strong>Buscar productos</strong> o <strong>Nuevo pedido</strong> en el menú para agregar.</p>';
     if (btnLimpiar) btnLimpiar.hidden = true;
+    if (btnRes) btnRes.hidden = true;
     return;
   }
   if (btnLimpiar) btnLimpiar.hidden = false;
+  if (btnRes) btnRes.hidden = false;
   const sorted = [...itemsToday].sort((a, b) =>
     (a.proveedor || '').localeCompare(b.proveedor || '', 'es')
   );
   mount.innerHTML = sorted
     .map((item) => {
-      const badge =
-        item.estado === 'pendiente'
-          ? 'pendiente'
-          : item.estado === 'comprado'
-            ? 'comprado'
-            : 'conseguido';
-      const label =
-        item.estado === 'pendiente'
-          ? 'Pendiente'
-          : item.estado === 'comprado'
-            ? 'Comprado'
-            : 'Conseguido';
       const donde = item.donde ? `<div class="lista-donde">📍 ${escapeHtml(item.donde)}</div>` : '';
       const q = lineQty(item);
       return `<div class="lista-item lista-item-sheet" data-id="${item.id}">
@@ -603,7 +588,7 @@ function renderLista() {
             <div class="lista-prod-name">${escapeHtml(item.producto)}</div>
             <div class="lista-prod-meta">${escapeHtml(item.proveedor)} · ${q} un.</div>
             ${donde}
-            <div class="lista-quien-hint">Último: ${escapeHtml(item.quien || '—')}</div>
+            <div class="lista-quien-hint">Último: ${escapeHtml(item.quien || '—')} · Estado en <strong>Resumen por proveedor</strong></div>
           </div>
           <div class="lista-sheet-ic">
             <span class="lista-qty-big" aria-hidden="true">${q}</span>
@@ -611,20 +596,12 @@ function renderLista() {
             <button type="button" class="lista-ic-btn lista-ic-danger" data-act="eliminar" aria-label="Eliminar">🗑</button>
           </div>
         </div>
-        <div class="lista-sheet-estado">
-          <span class="badge ${badge}">${label}</span>
-          <div class="lista-actions lista-actions-compact">
-            <button type="button" class="btn-sm" data-act="pendiente">Pendiente</button>
-            <button type="button" class="btn-sm primary" data-act="comprado">Compré</button>
-            <button type="button" class="btn-sm accent" data-act="conseguido">Conseguí en…</button>
-          </div>
-        </div>
       </div>`;
     })
     .join('');
 }
 
-/** @returns {null | { sections: { proveedor: string, pasillos: { label: string, items: { producto: string, qty: number }[] }[] }[] }} */
+/** @returns {null | { sections: { proveedor: string, pasillos: { label: string, items: Record<string, unknown>[] }[] }[] }} */
 function computeResumenTree() {
   if (itemsToday.length === 0) return null;
   const byProv = new Map();
@@ -652,7 +629,7 @@ function computeResumenTree() {
       items: byPas
         .get(pas)
         .sort((a, b) => (a.producto || '').localeCompare(b.producto || '', 'es'))
-        .map((r) => ({ producto: r.producto, qty: lineQty(r) })),
+        .map((r) => ({ ...r, qty: lineQty(r) })),
     }));
     sections.push({ proveedor: prov, pasillos });
   }
@@ -703,6 +680,22 @@ function buildResumenCsv() {
   return rows.map((r) => r.map(escapeCsvCell).join(',')).join('\r\n');
 }
 
+function resumenEstadoBadge(it) {
+  const badge =
+    it.estado === 'pendiente'
+      ? 'pendiente'
+      : it.estado === 'comprado'
+        ? 'comprado'
+        : 'conseguido';
+  const label =
+    it.estado === 'pendiente'
+      ? 'Pendiente'
+      : it.estado === 'comprado'
+        ? 'Comprado'
+        : 'Conseguido';
+  return { badge, label };
+}
+
 function renderResumen() {
   const mount = el('resumen-mount');
   const actions = el('resumen-actions');
@@ -719,7 +712,24 @@ function renderResumen() {
     for (const block of sec.pasillos) {
       html += `<div class="pasillo-sub">${escapeHtml(block.label)}</div>`;
       for (const it of block.items) {
-        html += `<div class="resumen-row"><span>${escapeHtml(it.producto)}</span><span class="resumen-qty">${it.qty}</span></div>`;
+        const { badge, label } = resumenEstadoBadge(it);
+        const donde = it.donde ? `<div class="resumen-donde">📍 ${escapeHtml(it.donde)}</div>` : '';
+        html += `<div class="lista-item resumen-item-card" data-id="${String(it.id).replace(/"/g, '')}">
+          <div class="resumen-item-head">
+            <div class="resumen-item-text">
+              <div class="lista-prod-name">${escapeHtml(it.producto)}</div>
+              <div class="lista-prod-meta">${it.qty} un.</div>
+              ${donde}
+            </div>
+            <span class="badge ${badge}">${label}</span>
+          </div>
+          <div class="lista-actions lista-actions-compact resumen-item-actions">
+            <button type="button" class="btn-sm" data-act="pendiente">Pendiente</button>
+            <button type="button" class="btn-sm primary" data-act="comprado">Compré</button>
+            <button type="button" class="btn-sm accent" data-act="conseguido">Conseguí en…</button>
+            <button type="button" class="btn-sm danger" data-act="eliminar">Eliminar</button>
+          </div>
+        </div>`;
       }
     }
     html += '</section>';
@@ -727,17 +737,48 @@ function renderResumen() {
   mount.innerHTML = html;
 }
 
-function openResumenPrintWindow() {
-  const body = escapeHtml(buildResumenPlainText());
-  const html = `<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"/><title>Resumen — ${escapeHtml(fecha())}</title>
+function buildResumenPrintDocumentHtml(tree) {
+  const gen = new Date().toLocaleString('es-AR');
+  const n = tree.sections.length;
+  let body = '';
+  tree.sections.forEach((sec, i) => {
+    const last = i === n - 1;
+    body += `<section class="print-prov${last ? ' print-prov-last' : ''}">`;
+    body += `<h2>${escapeHtml(sec.proveedor)}</h2>`;
+    for (const block of sec.pasillos) {
+      body += `<h3>${escapeHtml(block.label)}</h3><ul>`;
+      for (const it of block.items) {
+        body += `<li>${escapeHtml(it.producto)} — <strong>${it.qty}</strong></li>`;
+      }
+      body += '</ul>';
+    }
+    body += '</section>';
+  });
+  return `<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"/><title>Resumen — ${escapeHtml(fecha())}</title>
 <style>
-  body{font-family:system-ui,-apple-system,sans-serif;padding:1.2rem;font-size:11pt;color:#111;}
-  h1{font-size:13pt;margin:0 0 0.75rem;}
-  pre{white-space:pre-wrap;word-break:break-word;font-family:inherit;margin:0;line-height:1.45;}
+  body{font-family:system-ui,-apple-system,sans-serif;padding:12mm;font-size:11pt;color:#111;}
+  h1{font-size:14pt;margin:0 0 4mm;}
+  .meta{font-size:9pt;color:#555;margin:0 0 6mm;}
+  h2{font-size:12pt;margin:0 0 3mm;padding-bottom:2mm;border-bottom:1px solid #ccc;text-transform:uppercase;}
+  h3{font-size:10pt;color:#444;margin:4mm 0 1mm;}
+  ul{margin:0 0 4mm 5mm;padding:0;}
+  li{margin:1mm 0;}
+  .print-prov{page-break-after:always;}
+  .print-prov-last{page-break-after:auto;}
 </style></head><body>
 <h1>REPASO DEPÓSITO — ${escapeHtml(fecha())}</h1>
-<pre>${body}</pre>
+<p class="meta">Generado: ${escapeHtml(gen)}</p>
+${body}
 </body></html>`;
+}
+
+function openResumenPrintWindow() {
+  const tree = computeResumenTree();
+  if (!tree) {
+    alert('No hay datos en el resumen.');
+    return;
+  }
+  const html = buildResumenPrintDocumentHtml(tree);
   const w = window.open('', '_blank');
   if (!w) {
     alert('Permití ventanas emergentes para imprimir o ver la vista previa.');
@@ -752,8 +793,8 @@ function openResumenPrintWindow() {
 }
 
 async function resumenShareOrDownloadPdf() {
-  const text = buildResumenPlainText();
-  if (!text) {
+  const tree = computeResumenTree();
+  if (!tree) {
     alert('No hay datos en el resumen.');
     return;
   }
@@ -765,17 +806,65 @@ async function resumenShareOrDownloadPdf() {
       throw new Error('jsPDF no disponible');
     }
     const doc = new JsPDF({ unit: 'mm', format: 'a4' });
-    doc.setFontSize(9);
-    const lines = doc.splitTextToSize(text, 180);
+    const margin = 14;
+    const maxW = 182;
     let y = 12;
     const step = 4.2;
-    for (const line of lines) {
-      if (y > 285) {
+    const titleStep = 5.5;
+    doc.setFontSize(11);
+    doc.text(`REPASO DEPÓSITO — ${fecha()}`, margin, y);
+    y += 6;
+    doc.setFontSize(8);
+    doc.setTextColor(80);
+    doc.text(`Generado: ${new Date().toLocaleString('es-AR')}`, margin, y);
+    doc.setTextColor(0);
+    y += 8;
+    let firstProv = true;
+    for (let si = 0; si < tree.sections.length; si++) {
+      const sec = tree.sections[si];
+      if (!firstProv) {
         doc.addPage();
         y = 12;
       }
-      doc.text(line, 14, y);
-      y += step;
+      firstProv = false;
+      doc.setFontSize(11);
+      const headLines = doc.splitTextToSize(sec.proveedor, maxW);
+      for (const ln of headLines) {
+        if (y > 285) {
+          doc.addPage();
+          y = 12;
+        }
+        doc.text(ln, margin, y);
+        y += titleStep;
+      }
+      y += 2;
+      for (const block of sec.pasillos) {
+        doc.setFontSize(9);
+        doc.setTextColor(90);
+        const bl = doc.splitTextToSize(block.label, maxW);
+        for (const ln of bl) {
+          if (y > 285) {
+            doc.addPage();
+            y = 12;
+          }
+          doc.text(ln, margin, y);
+          y += step;
+        }
+        doc.setTextColor(0);
+        for (const it of block.items) {
+          const line = `• ${it.producto} — ${it.qty}`;
+          const wrapped = doc.splitTextToSize(line, maxW - 4);
+          for (const ln of wrapped) {
+            if (y > 285) {
+              doc.addPage();
+              y = 12;
+            }
+            doc.text(ln, margin + 3, y);
+            y += step;
+          }
+        }
+        y += 2;
+      }
     }
     blob = doc.output('blob');
   } catch (e) {
@@ -995,68 +1084,6 @@ function initNombreGate() {
   });
 }
 
-function readRemitoHistorial() {
-  try {
-    const raw = localStorage.getItem(LS_REMITO_HISTORIAL);
-    if (!raw) return [];
-    const a = JSON.parse(raw);
-    return Array.isArray(a) ? a : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeRemitoHistorial(entries) {
-  const trimmed = entries.slice(0, REMITO_HISTORIAL_MAX);
-  localStorage.setItem(LS_REMITO_HISTORIAL, JSON.stringify(trimmed));
-}
-
-/** Añade una copia al historial (más reciente primero). Máx. REMITO_HISTORIAL_MAX; se descarta la más antigua. */
-function pushRemitoHistorial(text) {
-  const t = String(text || '').trim();
-  if (!t) return { ok: false, count: readRemitoHistorial().length };
-  const next = [{ savedAt: Date.now(), text: t }, ...readRemitoHistorial()];
-  writeRemitoHistorial(next);
-  return { ok: true, count: readRemitoHistorial().length };
-}
-
-function saveRemitoLocal() {
-  localStorage.setItem(LS_REMITO, el('remito-text').value);
-}
-
-function copyPedidoToRemito() {
-  if (!itemsToday.length) {
-    alert('No hay ítems en el pedido de hoy.');
-    return;
-  }
-  const lines = itemsToday.map((it) => {
-    const q = lineQty(it);
-    const qStr = q > 1 ? ` x${q}` : '';
-    return `- ${it.producto}${qStr} | ${it.proveedor} | ${it.estado}${it.donde ? ' | ' + it.donde : ''}`;
-  });
-  el('remito-text').value = `Distribuidora Rosendo — ${fecha()}\n\n${lines.join('\n')}\n`;
-  saveRemitoLocal();
-}
-
-function printRemito() {
-  saveRemitoLocal();
-  const t = el('remito-text').value;
-  const w = window.open('', '_blank');
-  if (!w) {
-    alert('Permití ventanas emergentes para imprimir.');
-    return;
-  }
-  const pre = w.document.createElement('pre');
-  pre.style.whiteSpace = 'pre-wrap';
-  pre.style.fontFamily = 'system-ui, sans-serif';
-  pre.style.padding = '1rem';
-  pre.textContent = t || '(vacío)';
-  w.document.body.appendChild(pre);
-  w.document.title = 'Remito';
-  w.print();
-  w.close();
-}
-
 el('q').addEventListener('input', () => {
   clearTimeout(searchDebounce);
   searchDebounce = setTimeout(renderSearchResults, 180);
@@ -1074,17 +1101,42 @@ el('q-proveedores').addEventListener('input', () => {
 
 let pendingAdd = null;
 
+function getQtyInputValue() {
+  const n = parseInt(String(el('qty-input').value).trim(), 10);
+  if (Number.isNaN(n)) return 1;
+  return Math.max(1, Math.min(999, n));
+}
+
+function qtyInputIsEmpty() {
+  return String(el('qty-input').value).trim() === '';
+}
+
+function setQtyInputValue(n) {
+  el('qty-input').value = String(Math.max(1, Math.min(999, n)));
+}
+
+function syncQtyStepperButtons() {
+  if (qtyInputIsEmpty()) {
+    el('qty-dec').disabled = true;
+    el('qty-inc').disabled = false;
+    return;
+  }
+  const v = getQtyInputValue();
+  el('qty-dec').disabled = v <= 1;
+  el('qty-inc').disabled = v >= 999;
+}
+
 function openQtyModal(p) {
   pendingAdd = { nombre: p.nombre, proveedor: String(p.proveedor || '').trim() || '—' };
   const sug = unidadesDesdeNombre(p.nombre);
   el('qty-modal-title').textContent = p.nombre;
-  el('qty-input').value = String(Math.max(1, Math.min(999, sug)));
+  setQtyInputValue(1);
+  syncQtyStepperButtons();
   el('qty-modal-hint').textContent =
     sug > 1
-      ? `Sugerido según el catálogo: ${sug} unidades por bulto (podés cambiar).`
-      : 'Cantidad de bultos o unidades a pedir.';
+      ? `Usá + / − o tocá el número para escribir (ej. 20). Referencia catálogo: ${sug} u. por bulto.`
+      : 'Usá + / − o tocá el número para escribir la cantidad.';
   el('qty-modal').hidden = false;
-  queueMicrotask(() => el('qty-input').focus());
 }
 
 function closeQtyModal() {
@@ -1117,10 +1169,36 @@ el('proveedores-mount').addEventListener('click', handleAddCatalogClick);
 
 el('form-producto-edit').addEventListener('submit', saveProductCatalogFromForm);
 el('fab-nuevo-producto').addEventListener('click', () => openNewProduct());
+el('fab-nuevo-proveedor').addEventListener('click', () => openNewProduct({ focusProveedor: true }));
+
+el('qty-dec').addEventListener('click', () => {
+  if (qtyInputIsEmpty()) return;
+  setQtyInputValue(getQtyInputValue() - 1);
+  syncQtyStepperButtons();
+});
+
+el('qty-inc').addEventListener('click', () => {
+  if (qtyInputIsEmpty()) setQtyInputValue(1);
+  else setQtyInputValue(getQtyInputValue() + 1);
+  syncQtyStepperButtons();
+});
+
+el('qty-input').addEventListener('input', () => {
+  syncQtyStepperButtons();
+});
+
+el('qty-input').addEventListener('blur', () => {
+  setQtyInputValue(getQtyInputValue());
+  syncQtyStepperButtons();
+});
 
 el('qty-confirm').addEventListener('click', async () => {
-  const n = parseInt(el('qty-input').value, 10);
-  if (Number.isNaN(n) || n < 1 || n > 999) {
+  if (qtyInputIsEmpty()) {
+    alert('Escribí una cantidad o usá + / −.');
+    return;
+  }
+  const n = getQtyInputValue();
+  if (n < 1 || n > 999) {
     alert('Cantidad entre 1 y 999.');
     return;
   }
@@ -1170,6 +1248,16 @@ el('lista-mount').addEventListener('click', (e) => {
   onListaAction(b.dataset.act, id);
 });
 
+el('resumen-mount').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-act]');
+  if (!b) return;
+  const row = b.closest('.lista-item');
+  if (!row?.dataset?.id) return;
+  onListaAction(b.dataset.act, row.dataset.id);
+});
+
+el('btn-lista-a-resumen').addEventListener('click', () => showView('resumen'));
+
 el('btn-menu').addEventListener('click', () => {
   el('shell').classList.toggle('nav-open');
 });
@@ -1197,22 +1285,9 @@ el('nav-productos').addEventListener('click', () => showView('productos'));
 el('nav-proveedores').addEventListener('click', () => showView('proveedores'));
 el('nav-lista').addEventListener('click', () => showView('lista'));
 el('nav-resumen').addEventListener('click', () => showView('resumen'));
-el('nav-remito').addEventListener('click', () => showView('remito'));
 
 el('go-lista').addEventListener('click', () => showView('lista'));
 el('go-resumen').addEventListener('click', () => showView('resumen'));
-el('go-remito').addEventListener('click', () => showView('remito'));
-el('btn-remito-guardar').addEventListener('click', () => {
-  const r = pushRemitoHistorial(el('remito-text').value);
-  if (!r.ok) {
-    alert('El remito está vacío; no hay nada que guardar en el historial.');
-    return;
-  }
-  saveRemitoLocal();
-  alert(`Guardado en este navegador: ${r.count}/${REMITO_HISTORIAL_MAX} remitos (el más antiguo se borra al pasar el límite).`);
-});
-el('btn-remito-print').addEventListener('click', printRemito);
-el('btn-remito-desde-pedido').addEventListener('click', copyPedidoToRemito);
 
 el('btn-focus-buscar').addEventListener('click', () => {
   showView('buscar', { buscarNav: 'nuevo' });

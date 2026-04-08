@@ -657,12 +657,58 @@ body {
   margin-bottom: 0.35rem;
 }
 
-.qty-modal-box input[type='number'] {
-  width: 100%;
-  padding: 0.65rem 0.75rem;
+.qty-stepper {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.qty-step-btn {
+  flex-shrink: 0;
+  width: 3.1rem;
+  min-height: 2.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-step-btn:hover:not(:disabled) {
+  background: #eeeeee;
+}
+
+.qty-step-btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.qty-modal-box .qty-stepper input[type='number'] {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  padding: 0.65rem 0.5rem;
   font-size: 1.1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
+  text-align: center;
+}
+
+.qty-modal-box .qty-stepper input[type='number']::-webkit-outer-spin-button,
+.qty-modal-box .qty-stepper input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qty-modal-box .qty-stepper input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .qty-modal-title {
@@ -810,17 +856,6 @@ body {
 
 .lista-ic-danger:hover {
   background: #ffebee;
-}
-
-.lista-sheet-estado {
-  padding: 0.5rem 0.85rem 0.65rem;
-  background: #fafafa;
-  border-top: 1px solid var(--divider);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: space-between;
 }
 
 .lista-actions-compact {
@@ -1014,6 +1049,7 @@ body {
   border-radius: 8px;
   margin-bottom: 0.85rem;
   overflow: hidden;
+  padding-bottom: 0.35rem;
 }
 
 .prov-title {
@@ -1050,6 +1086,42 @@ body {
 
 .resumen-qty {
   font-weight: 700;
+}
+
+.btn-lista-a-resumen {
+  width: 100%;
+  margin: 0 0 0.65rem;
+}
+
+.prov-section .resumen-item-card {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.resumen-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem 0.35rem;
+}
+
+.resumen-item-text {
+  min-width: 0;
+}
+
+.resumen-donde {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.resumen-item-actions {
+  margin: 0;
+  padding: 0.5rem 0.75rem 0.65rem;
+  border-top: 1px solid var(--divider);
+  background: #fafafa;
 }
 
 .hint {
@@ -1119,20 +1191,6 @@ body {
   text-align: center;
   color: var(--muted);
   padding: 2rem 1rem;
-}
-
-.remito-text {
-  width: 100%;
-  min-height: 280px;
-  padding: 0.75rem 0.85rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-family: inherit;
-  line-height: 1.4;
-  resize: vertical;
-  background: #fafafa;
-  color: var(--text);
 }
 
 .app-shell.view-producto-edit-bar .topbar {

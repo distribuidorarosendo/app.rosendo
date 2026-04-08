@@ -4,7 +4,7 @@
   <base href="/" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Depósito — pedido y remito, Distribuidora Rosendo" />
+  <meta name="description" content="Depósito — pedido del día y resumen por proveedor, Distribuidora Rosendo" />
   <title>DEPÓSITO — Rosendo</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="manifest" href="manifest.json" />
@@ -21,7 +21,11 @@
     <div class="qty-modal-box">
       <h2 id="qty-modal-title" class="qty-modal-title"></h2>
       <label for="qty-input">Cantidad</label>
-      <input type="number" id="qty-input" min="1" max="999" value="1" inputmode="numeric" />
+      <div class="qty-stepper" role="group" aria-label="Cantidad">
+        <button type="button" class="qty-step-btn" id="qty-dec" aria-label="Restar uno">−</button>
+        <input type="number" id="qty-input" min="1" max="999" value="1" inputmode="numeric" />
+        <button type="button" class="qty-step-btn" id="qty-inc" aria-label="Sumar uno">+</button>
+      </div>
       <p id="qty-modal-hint" class="hint qty-modal-hint"></p>
       <div class="qty-modal-actions">
         <button type="button" class="btn-main secondary" id="qty-cancel">Cancelar</button>
@@ -83,7 +87,6 @@
         <button type="button" class="nav-item" data-nav="proveedores" id="nav-proveedores"><span class="nav-ic">🏷</span> Proveedores</button>
         <button type="button" class="nav-item" data-nav="lista" id="nav-lista"><span class="nav-ic">☰</span> Lista de pedido</button>
         <button type="button" class="nav-item" data-nav="resumen" id="nav-resumen"><span class="nav-ic">▤</span> Resumen por proveedor</button>
-        <button type="button" class="nav-item" data-nav="remito" id="nav-remito"><span class="nav-ic">📄</span> Remito</button>
         <span class="nav-item nav-item-disabled"><span class="nav-ic">⚙</span> Configuración (próximamente)</span>
         <span class="nav-item nav-item-disabled"><span class="nav-ic">?</span> Ayuda (próximamente)</span>
       </nav>
@@ -130,11 +133,9 @@
             <button type="button" class="btn-main" id="btn-focus-buscar"><span class="btn-ic">🛒</span> NUEVO PEDIDO</button>
             <button type="button" class="btn-main secondary" id="go-lista"><span class="btn-ic">☰</span> VER LISTA DE PEDIDO</button>
             <button type="button" class="btn-main secondary" id="go-resumen"><span class="btn-ic">▤</span> RESUMEN POR PROVEEDOR</button>
-            <button type="button" class="btn-main secondary" id="go-remito"><span class="btn-ic">📄</span> REMITO (borrador)</button>
           </div>
 
           <p class="hint" id="nombre-line" style="margin-top: 1rem"></p>
-          <p class="hint">Remito: solo en este navegador (hasta 10 guardados).</p>
         </section>
 
         <section id="view-buscar" class="view view-buscar" hidden>
@@ -210,38 +211,30 @@
             </div>
           </div>
           <div id="proveedores-mount"></div>
+          <button type="button" class="fab-add-product fab-proveedor" id="fab-nuevo-proveedor" aria-label="Nuevo proveedor (crear producto)">+</button>
         </section>
 
         <section id="view-lista" class="view view-lista-page" hidden>
-          <p class="hint">Pedido del <strong id="lista-fecha-lbl"></strong>. Sincronización ~8 s.</p>
+          <p class="hint">Pedido del <strong id="lista-fecha-lbl"></strong>. Sincronización ~8 s. El estado <strong>comprado / pendiente</strong> lo marcás en <strong>Resumen por proveedor</strong>.</p>
+          <button type="button" class="btn-main secondary btn-lista-a-resumen" id="btn-lista-a-resumen" hidden>
+            ▤ Ir al resumen por proveedor
+          </button>
           <div id="lista-mount"></div>
           <button type="button" class="btn-limpiar-lista" id="btn-limpiar-lista" hidden>LIMPIAR LISTA</button>
         </section>
 
         <section id="view-resumen" class="view view-resumen-page" hidden>
+          <p class="hint">Acá ves el pedido por <strong>mayorista</strong>: marcá <strong>Compré / Pendiente / Conseguí</strong> en cada ítem. Imprimir y PDF usan <strong>una hoja por proveedor</strong>.</p>
           <p class="hint resumen-export-hint">
-            Desde el celular: si no podés imprimir acá, tocá <strong>Enviar PDF</strong> para compartir por WhatsApp, mail o Drive; también podés
-            <strong>copiar</strong> el texto o bajar el <strong>Excel (.csv)</strong>. En la PC: vista previa e imprimir, o guardar como PDF desde el diálogo de impresión.
+            <strong>Enviar PDF</strong> para WhatsApp o PC. También: imprimir, Excel (.csv), copiar o compartir texto.
           </p>
           <div id="resumen-mount"></div>
           <div id="resumen-actions" class="resumen-export-stack" hidden>
-            <button type="button" class="btn-main" id="btn-resumen-share-pdf">📤 Enviar PDF (para abrir en la PC / WhatsApp)</button>
+            <button type="button" class="btn-main" id="btn-resumen-share-pdf">📤 Enviar PDF</button>
             <button type="button" class="btn-main secondary" id="btn-resumen-print">🖨 Vista previa / imprimir en este dispositivo</button>
             <button type="button" class="btn-main secondary" id="btn-resumen-csv">📊 Excel (.csv) — compartir / guardar</button>
             <button type="button" class="btn-main" id="btn-resumen-copy">📋 Copiar al portapapeles</button>
             <button type="button" class="btn-main secondary" id="btn-resumen-share-text">↗ Compartir como texto</button>
-          </div>
-        </section>
-
-        <section id="view-remito" class="view" hidden>
-          <p class="hint">Borrador local: al guardar se guardan hasta <strong>10</strong> versiones en el navegador (se descarta la más antigua). «Copiar desde pedido» trae las líneas de hoy.</p>
-          <div class="lista-actions" style="margin-bottom: 0.65rem">
-            <button type="button" class="btn-sm accent" id="btn-remito-desde-pedido">Copiar desde pedido de hoy</button>
-          </div>
-          <textarea id="remito-text" class="remito-text" placeholder="Escribí o pegá el remito…"></textarea>
-          <div class="lista-actions" style="margin-top: 0.65rem">
-            <button type="button" class="btn-main secondary" id="btn-remito-guardar">Guardar borrador</button>
-            <button type="button" class="btn-main" id="btn-remito-print">Imprimir</button>
           </div>
         </section>
       </main>
