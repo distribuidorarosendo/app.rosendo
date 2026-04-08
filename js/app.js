@@ -152,6 +152,17 @@ function fecha() {
   return fechaLocalHoy();
 }
 
+/** Fecha y hora local para impresión/PDF: `2026-04-08 20:42` */
+function resumenFechaHoraImpresion() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mm = String(d.getMinutes()).padStart(2, '0');
+  return `${y}-${m}-${day} ${hh}:${mm}`;
+}
+
 function lineQty(it) {
   const c = Number(it.cantidad ?? 1);
   if (Number.isNaN(c) || c < 1) return 1;
@@ -738,36 +749,49 @@ function renderResumen() {
 }
 
 function buildResumenPrintDocumentHtml(tree) {
-  const gen = new Date().toLocaleString('es-AR');
+  const fechaHora = resumenFechaHoraImpresion();
   const n = tree.sections.length;
   let body = '';
   tree.sections.forEach((sec, i) => {
     const last = i === n - 1;
     body += `<section class="print-prov${last ? ' print-prov-last' : ''}">`;
-    body += `<h2>${escapeHtml(sec.proveedor)}</h2>`;
+    body += `<h1 class="print-doc-title">Repaso depósito ${escapeHtml(sec.proveedor)}</h1>`;
+    body += `<p class="print-fecha">Fecha: ${escapeHtml(fechaHora)}</p>`;
+    body +=
+      '<table class="print-grid"><thead><tr>' +
+      '<th>MAYORISTA</th><th>Pasillo</th><th>Productos</th><th>Cantidad</th>' +
+      '</tr></thead><tbody>';
     for (const block of sec.pasillos) {
-      body += `<h3>${escapeHtml(block.label)}</h3><ul>`;
       for (const it of block.items) {
-        body += `<li>${escapeHtml(it.producto)} — <strong>${it.qty}</strong></li>`;
+        body += `<tr><td>${escapeHtml(sec.proveedor)}</td><td>${escapeHtml(block.label)}</td><td>${escapeHtml(it.producto)}</td><td class="print-qty">${escapeHtml(String(it.qty))}</td></tr>`;
       }
-      body += '</ul>';
     }
-    body += '</section>';
+    body += `</tbody><tfoot><tr><td colspan="4" class="print-page-idx">-- ${i + 1} of ${n} --</td></tr></tfoot></table></section>`;
   });
-  return `<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"/><title>Resumen — ${escapeHtml(fecha())}</title>
+  return `<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"/><title>Repaso depósito — ${escapeHtml(fecha())}</title>
 <style>
-  body{font-family:system-ui,-apple-system,sans-serif;padding:12mm;font-size:11pt;color:#111;}
-  h1{font-size:14pt;margin:0 0 4mm;}
-  .meta{font-size:9pt;color:#555;margin:0 0 6mm;}
-  h2{font-size:12pt;margin:0 0 3mm;padding-bottom:2mm;border-bottom:1px solid #ccc;text-transform:uppercase;}
-  h3{font-size:10pt;color:#444;margin:4mm 0 1mm;}
-  ul{margin:0 0 4mm 5mm;padding:0;}
-  li{margin:1mm 0;}
+  *{box-sizing:border-box;}
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;padding:10mm 12mm;font-size:10pt;color:#111;}
+  .print-doc-title{font-size:14pt;font-weight:700;margin:0 0 2mm;text-transform:none;}
+  .print-fecha{margin:0 0 5mm;font-size:10pt;}
+  .print-grid{width:100%;border-collapse:collapse;table-layout:fixed;}
+  .print-grid th,.print-grid td{border:1px solid #888;padding:3px 5px;vertical-align:top;word-wrap:break-word;}
+  .print-grid th{background:#e8e8e8;font-size:9pt;font-weight:700;text-align:left;}
+  .print-grid td{font-size:9pt;}
+  .print-grid th:nth-child(1),.print-grid td:nth-child(1){width:18%;}
+  .print-grid th:nth-child(2),.print-grid td:nth-child(2){width:16%;}
+  .print-grid th:nth-child(3),.print-grid td:nth-child(3){width:54%;}
+  .print-grid th:nth-child(4),.print-grid td:nth-child(4){width:12%;}
+  .print-qty{text-align:center;font-weight:600;}
+  .print-grid tfoot td{border:none;padding-top:6mm;font-size:9pt;color:#333;}
+  .print-page-idx{text-align:center;}
+  @media print{
+    thead{display:table-header-group;}
+    tfoot{display:table-footer-group;}
+  }
   .print-prov{page-break-after:always;}
   .print-prov-last{page-break-after:auto;}
 </style></head><body>
-<h1>REPASO DEPÓSITO — ${escapeHtml(fecha())}</h1>
-<p class="meta">Generado: ${escapeHtml(gen)}</p>
 ${body}
 </body></html>`;
 }
@@ -792,6 +816,15 @@ function openResumenPrintWindow() {
   };
 }
 
+function pdfStampRepasoFooter(doc, supplierIndex1Based, totalSuppliers) {
+  const w = doc.internal.pageSize.getWidth();
+  const h = doc.internal.pageSize.getHeight();
+  doc.setFontSize(9);
+  doc.setTextColor(55);
+  doc.text(`-- ${supplierIndex1Based} of ${totalSuppliers} --`, w / 2, h - 10, { align: 'center' });
+  doc.setTextColor(0);
+}
+
 async function resumenShareOrDownloadPdf() {
   const tree = computeResumenTree();
   if (!tree) {
@@ -807,70 +840,98 @@ async function resumenShareOrDownloadPdf() {
     }
     const doc = new JsPDF({ unit: 'mm', format: 'a4' });
     const margin = 14;
-    const maxW = 182;
-    let y = 12;
-    const step = 4.2;
-    const titleStep = 5.5;
-    doc.setFontSize(11);
-    doc.text(`REPASO DEPÓSITO — ${fecha()}`, margin, y);
-    y += 6;
-    doc.setFontSize(8);
-    doc.setTextColor(80);
-    doc.text(`Generado: ${new Date().toLocaleString('es-AR')}`, margin, y);
-    doc.setTextColor(0);
-    y += 8;
-    let firstProv = true;
-    for (let si = 0; si < tree.sections.length; si++) {
-      const sec = tree.sections[si];
-      if (!firstProv) {
-        doc.addPage();
-        y = 12;
-      }
-      firstProv = false;
-      doc.setFontSize(11);
-      const headLines = doc.splitTextToSize(sec.proveedor, maxW);
-      for (const ln of headLines) {
-        if (y > 285) {
-          doc.addPage();
-          y = 12;
-        }
-        doc.text(ln, margin, y);
-        y += titleStep;
-      }
-      y += 2;
-      for (const block of sec.pasillos) {
+    const rightEdge = doc.internal.pageSize.getWidth() - margin;
+    const colMay = margin;
+    const colMayW = 30;
+    const colPas = colMay + colMayW + 2;
+    const colPasW = 26;
+    const colProd = colPas + colPasW + 2;
+    const colProdW = 100;
+    const lh = 3.8;
+    const yMaxContent = 272;
+    const nSec = tree.sections.length;
+    const fechaHoraPdf = resumenFechaHoraImpresion();
+
+    const drawTableHeader = (y0) => {
+      let y = y0;
+      doc.setFontSize(9);
+      doc.setFont('helvetica', 'bold');
+      doc.text('MAYORISTA', colMay, y);
+      doc.text('Pasillo', colPas, y);
+      doc.text('Productos', colProd, y);
+      doc.text('Cantidad', rightEdge, y, { align: 'right' });
+      doc.setFont('helvetica', 'normal');
+      y += lh + 0.5;
+      doc.setDrawColor(130);
+      doc.line(margin, y, rightEdge, y);
+      return y + 2.5;
+    };
+
+    const rowBlockHeight = (may, pas, prod) => {
+      doc.setFontSize(9);
+      doc.setFont('helvetica', 'normal');
+      const lm = doc.splitTextToSize(may, colMayW);
+      const lp = doc.splitTextToSize(pas, colPasW);
+      const lr = doc.splitTextToSize(prod, colProdW);
+      const lines = Math.max(lm.length, lp.length, lr.length, 1);
+      return lines * lh + 1;
+    };
+
+    const drawDataRow = (y0, may, pas, prod, qty) => {
+      const lm = doc.splitTextToSize(may, colMayW);
+      const lp = doc.splitTextToSize(pas, colPasW);
+      const lr = doc.splitTextToSize(prod, colProdW);
+      const n = Math.max(lm.length, lp.length, lr.length, 1);
+      let y = y0;
+      for (let i = 0; i < n; i++) {
         doc.setFontSize(9);
-        doc.setTextColor(90);
-        const bl = doc.splitTextToSize(block.label, maxW);
-        for (const ln of bl) {
-          if (y > 285) {
+        doc.setFont('helvetica', 'normal');
+        doc.text(lm[i] || '', colMay, y);
+        doc.text(lp[i] || '', colPas, y);
+        doc.text(lr[i] || '', colProd, y);
+        if (i === 0) doc.text(String(qty), rightEdge, y, { align: 'right' });
+        y += lh;
+      }
+      return y + 1;
+    };
+
+    for (let si = 0; si < nSec; si++) {
+      const sec = tree.sections[si];
+      if (si > 0) doc.addPage();
+      let y = 12;
+      doc.setFontSize(13);
+      doc.setFont('helvetica', 'bold');
+      doc.text(`Repaso depósito ${sec.proveedor}`, margin, y);
+      doc.setFont('helvetica', 'normal');
+      y += 7;
+      doc.setFontSize(10);
+      doc.text(`Fecha: ${fechaHoraPdf}`, margin, y);
+      y += 8;
+      y = drawTableHeader(y);
+
+      for (const block of sec.pasillos) {
+        for (const it of block.items) {
+          const may = String(sec.proveedor || '');
+          const pas = String(block.label || '');
+          const prod = String(it.producto || '');
+          const qty = it.qty;
+          const need = rowBlockHeight(may, pas, prod);
+          if (y + need > yMaxContent) {
+            pdfStampRepasoFooter(doc, si + 1, nSec);
             doc.addPage();
             y = 12;
+            y = drawTableHeader(y);
           }
-          doc.text(ln, margin, y);
-          y += step;
+          y = drawDataRow(y, may, pas, prod, qty);
         }
-        doc.setTextColor(0);
-        for (const it of block.items) {
-          const line = `• ${it.producto} — ${it.qty}`;
-          const wrapped = doc.splitTextToSize(line, maxW - 4);
-          for (const ln of wrapped) {
-            if (y > 285) {
-              doc.addPage();
-              y = 12;
-            }
-            doc.text(ln, margin + 3, y);
-            y += step;
-          }
-        }
-        y += 2;
       }
+      pdfStampRepasoFooter(doc, si + 1, nSec);
     }
     blob = doc.output('blob');
   } catch (e) {
     console.warn('PDF:', e);
   }
-  const name = `resumen-deposito-${fecha()}.pdf`;
+  const name = `repaso_deposito_${fecha()}.pdf`;
   if (blob && navigator.canShare && navigator.canShare({ files: [new File([blob], name, { type: 'application/pdf' })] })) {
     try {
       await navigator.share({

@@ -36,6 +36,20 @@ function getFecha(req) {
   return f;
 }
 
+/** Valor devuelto por Neon para columna `date` (string ISO o Date). Nunca usar String(d).slice(0,10) en un Date. */
+function fechaPedidoToYmd(v) {
+  if (v == null || v === '') return null;
+  const s = String(v);
+  const m = s.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (m) return m[1];
+  const d = v instanceof Date ? v : new Date(v);
+  if (Number.isNaN(d.getTime())) return null;
+  const y = d.getUTCFullYear();
+  const mo = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${y}-${mo}-${day}`;
+}
+
 function isMissingCantidadColumnError(e) {
   const msg = String(e?.message || e || '').toLowerCase();
   if (!msg.includes('cantidad')) return false;
@@ -237,19 +251,21 @@ export default async function handler(req, res) {
          el resto de filas con el mismo texto de producto pasan al mismo estado
          para que nadie duplique la compra. */
       if (estado === 'comprado' || estado === 'conseguido') {
-        const fechaStr = String(updated.fecha_pedido).slice(0, 10);
+        const fechaStr = fechaPedidoToYmd(updated.fecha_pedido);
         const prod = String(updated.producto || '');
-        await sql`
-          UPDATE items_pedido
-          SET
-            estado = ${estado},
-            donde = ${donde},
-            quien = ${quien},
-            updated_at = NOW()
-          WHERE fecha_pedido = ${fechaStr}::date
-            AND id <> ${id}::uuid
-            AND lower(trim(producto)) = lower(trim(${prod}))
-        `;
+        if (fechaStr) {
+          await sql`
+            UPDATE items_pedido
+            SET
+              estado = ${estado},
+              donde = ${donde},
+              quien = ${quien},
+              updated_at = NOW()
+            WHERE fecha_pedido = ${fechaStr}::date
+              AND id <> ${id}::uuid
+              AND lower(trim(producto)) = lower(trim(${prod}))
+          `;
+        }
       }
 
       return sendJson(res, 200, updated);

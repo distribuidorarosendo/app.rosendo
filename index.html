@@ -45,25 +45,6 @@
     </div>
   </div>
 
-  <script>
-    (function () {
-      var g = document.getElementById('nombre-gate');
-      var a = document.getElementById('shell');
-      try {
-        var n = localStorage.getItem('pedidos_rosendo_nombre');
-        if (n && String(n).trim()) {
-          g.hidden = true;
-          a.hidden = false;
-        } else {
-          g.hidden = false;
-          a.hidden = true;
-        }
-      } catch (e) {
-        a.hidden = true;
-      }
-    })();
-  </script>
-
   <div id="shell" class="app-shell" hidden>
     <button type="button" id="sidebar-backdrop" class="sidebar-backdrop" aria-label="Cerrar menú"></button>
 
@@ -243,6 +224,25 @@
     </div>
   </div>
 
+  <script>
+    (function () {
+      var g = document.getElementById('nombre-gate');
+      var a = document.getElementById('shell');
+      if (!g || !a) return;
+      try {
+        var n = localStorage.getItem('pedidos_rosendo_nombre');
+        if (n && String(n).trim()) {
+          g.hidden = true;
+          a.hidden = false;
+        } else {
+          g.hidden = false;
+          a.hidden = true;
+        }
+      } catch (e) {
+        a.hidden = true;
+      }
+    })();
+  </script>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
