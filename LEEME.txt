@@ -4,7 +4,7 @@ Entrada principal: index.html (depósito en HTML/JS: búsqueda, pedido del día 
   - js/app.js + js/pedidos-api.js + css/deposito.css
   - Catálogo: assets/assets/data/productos_inicial.json (edición de productos en el navegador: localStorage rosendo_catalog_*)
 
-Backend: api/pedidos.js + Postgres (Neon). SQL: vercel-postgres-schema.sql, migración fecha si aplica, y vercel-postgres-migration-cantidad.sql (columna cantidad por línea).
+Backend: api/pedidos.js + Postgres (Neon). SQL: vercel-postgres-schema.sql, migración fecha si aplica, y vercel-postgres-migration-cantidad.sql (columna cantidad por línea). Si no corrés la migración de cantidad, la API igual intenta insertar/actualizar sin esa columna (cantidades >1 no se guardan bien hasta migrar).
 Límite para cuidar el plan gratis: como máximo 10 filas por día en items_pedido; al insertar la 11.ª se borran las más viejas de ese mismo día.
 
 pedidos.html y deposito.html redirigen a / por si quedaron enlaces viejos.

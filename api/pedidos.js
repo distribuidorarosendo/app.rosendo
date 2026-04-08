@@ -36,6 +36,17 @@ function getFecha(req) {
   return f;
 }
 
+function isMissingCantidadColumnError(e) {
+  const msg = String(e?.message || e || '').toLowerCase();
+  if (!msg.includes('cantidad')) return false;
+  return (
+    msg.includes('does not exist') ||
+    msg.includes('column') ||
+    msg.includes('undefined column') ||
+    msg.includes('unknown column')
+  );
+}
+
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object' && !Buffer.isBuffer(req.body)) {
     return req.body;
@@ -116,11 +127,21 @@ export default async function handler(req, res) {
         `;
       }
 
-      const rows = await sql`
-        INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas, cantidad)
-        VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '', ${cantidad})
-        RETURNING *
-      `;
+      let rows;
+      try {
+        rows = await sql`
+          INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas, cantidad)
+          VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '', ${cantidad})
+          RETURNING *
+        `;
+      } catch (insErr) {
+        if (!isMissingCantidadColumnError(insErr)) throw insErr;
+        rows = await sql`
+          INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas)
+          VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '')
+          RETURNING *
+        `;
+      }
       return sendJson(res, 201, rows[0]);
     }
 
@@ -130,9 +151,20 @@ export default async function handler(req, res) {
         return sendJson(res, 400, { error: 'Falta ?id=' });
       }
       const body = await parseBody(req);
-      const curRows = await sql`
-        SELECT estado, donde, quien, notas, cantidad FROM items_pedido WHERE id = ${id}::uuid
-      `;
+
+      let curRows;
+      let useCantidad = true;
+      try {
+        curRows = await sql`
+          SELECT estado, donde, quien, notas, cantidad FROM items_pedido WHERE id = ${id}::uuid
+        `;
+      } catch (selErr) {
+        if (!isMissingCantidadColumnError(selErr)) throw selErr;
+        useCantidad = false;
+        curRows = await sql`
+          SELECT estado, donde, quien, notas FROM items_pedido WHERE id = ${id}::uuid
+        `;
+      }
       if (!curRows.length) {
         return sendJson(res, 404, { error: 'No encontrado' });
       }
@@ -145,24 +177,57 @@ export default async function handler(req, res) {
       const quien = body.quien != null ? String(body.quien) : String(cur.quien ?? '');
       const notas = body.notas != null ? String(body.notas) : String(cur.notas ?? '');
       let cantidad =
-        cur.cantidad != null && cur.cantidad !== '' ? Number(cur.cantidad) : 1;
+        useCantidad && cur.cantidad != null && cur.cantidad !== ''
+          ? Number(cur.cantidad)
+          : 1;
       if (Number.isNaN(cantidad) || cantidad < 1) cantidad = 1;
-      if (body.cantidad != null) {
+      if (useCantidad && body.cantidad != null) {
         const c = parseInt(body.cantidad, 10);
         if (!Number.isNaN(c) && c >= 1 && c <= 999) cantidad = c;
       }
-      const rows = await sql`
-        UPDATE items_pedido
-        SET
-          estado = ${estado},
-          donde = ${donde},
-          quien = ${quien},
-          notas = ${notas},
-          cantidad = ${cantidad},
-          updated_at = NOW()
-        WHERE id = ${id}::uuid
-        RETURNING *
-      `;
+
+      let rows;
+      if (useCantidad) {
+        try {
+          rows = await sql`
+            UPDATE items_pedido
+            SET
+              estado = ${estado},
+              donde = ${donde},
+              quien = ${quien},
+              notas = ${notas},
+              cantidad = ${cantidad},
+              updated_at = NOW()
+            WHERE id = ${id}::uuid
+            RETURNING *
+          `;
+        } catch (updErr) {
+          if (!isMissingCantidadColumnError(updErr)) throw updErr;
+          rows = await sql`
+            UPDATE items_pedido
+            SET
+              estado = ${estado},
+              donde = ${donde},
+              quien = ${quien},
+              notas = ${notas},
+              updated_at = NOW()
+            WHERE id = ${id}::uuid
+            RETURNING *
+          `;
+        }
+      } else {
+        rows = await sql`
+          UPDATE items_pedido
+          SET
+            estado = ${estado},
+            donde = ${donde},
+            quien = ${quien},
+            notas = ${notas},
+            updated_at = NOW()
+          WHERE id = ${id}::uuid
+          RETURNING *
+        `;
+      }
       if (!rows.length) {
         return sendJson(res, 404, { error: 'No encontrado' });
       }
