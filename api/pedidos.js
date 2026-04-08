@@ -19,6 +19,20 @@ function getId(req) {
   }
 }
 
+function getFecha(req) {
+  let f = null;
+  if (req.query && typeof req.query.fecha === 'string') f = req.query.fecha;
+  if (!f) {
+    try {
+      f = new URL(req.url || '/', 'http://localhost').searchParams.get('fecha');
+    } catch {
+      /* ignore */
+    }
+  }
+  if (!f || !/^\d{4}-\d{2}-\d{2}$/.test(f)) return null;
+  return f;
+}
+
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object' && !Buffer.isBuffer(req.body)) {
     return req.body;
@@ -49,7 +63,17 @@ export default async function handler(req, res) {
 
   try {
     if (req.method === 'GET') {
-      const rows = await sql`SELECT * FROM items_pedido ORDER BY updated_at DESC`;
+      const fecha = getFecha(req);
+      if (!fecha) {
+        return sendJson(res, 400, {
+          error: 'Falta ?fecha=YYYY-MM-DD (día del pedido en tu calendario).',
+        });
+      }
+      const rows = await sql`
+        SELECT * FROM items_pedido
+        WHERE fecha_pedido = ${fecha}::date
+        ORDER BY updated_at DESC
+      `;
       return sendJson(res, 200, rows);
     }
 
@@ -58,12 +82,16 @@ export default async function handler(req, res) {
       const proveedor = String(body.proveedor || '').trim();
       const producto = String(body.producto || '').trim();
       const quien = String(body.quien || '').trim();
+      let fechaPedido = String(body.fecha_pedido || '').trim();
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(fechaPedido)) {
+        return sendJson(res, 400, { error: 'fecha_pedido obligatoria (YYYY-MM-DD)' });
+      }
       if (!proveedor || !producto) {
         return sendJson(res, 400, { error: 'proveedor y producto son obligatorios' });
       }
       const rows = await sql`
-        INSERT INTO items_pedido (proveedor, producto, estado, donde, quien, notas)
-        VALUES (${proveedor}, ${producto}, 'pendiente', '', ${quien}, '')
+        INSERT INTO items_pedido (fecha_pedido, proveedor, producto, estado, donde, quien, notas)
+        VALUES (${fechaPedido}::date, ${proveedor}, ${producto}, 'pendiente', '', ${quien}, '')
         RETURNING *
       `;
       return sendJson(res, 201, rows[0]);
@@ -120,6 +148,13 @@ export default async function handler(req, res) {
     console.error(e);
     const msg = e.message || String(e);
     const low = msg.toLowerCase();
+    if (low.includes('column') && low.includes('fecha_pedido')) {
+      return sendJson(res, 503, {
+        code: 'MIGRACION',
+        message:
+          'Falta la columna fecha_pedido. Ejecutá vercel-postgres-migration-fecha-pedido.sql en Neon y recargá.',
+      });
+    }
     if (low.includes('relation') && low.includes('does not exist')) {
       return sendJson(res, 503, {
         code: 'TABLA_FALTA',

@@ -76,6 +76,45 @@
       color: var(--muted);
       margin-bottom: 0.25rem;
     }
+    .pedido-dia {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+    .pedido-dia h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .pedido-dia .literal-fecha {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .fecha-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 0.6rem;
+    }
+    .fecha-row > div:first-child {
+      flex: 1;
+      min-width: 160px;
+    }
+    input[type="date"] {
+      width: 100%;
+      max-width: 220px;
+      padding: 0.55rem 0.65rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 1rem;
+    }
     input[type="text"],
     select {
       width: 100%;
@@ -185,13 +224,106 @@
       color: var(--muted);
       margin-top: 0.35rem;
     }
+    .nombre-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(8, 12, 18, 0.92);
+      backdrop-filter: blur(6px);
+    }
+    .nombre-gate[hidden] {
+      display: none !important;
+    }
+    .nombre-gate-dialog {
+      width: 100%;
+      max-width: 400px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.35rem 1.25rem 1.25rem;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+    }
+    .nombre-gate-dialog h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.25rem;
+    }
+    .nombre-gate-dialog > p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .nombre-gate-error {
+      min-height: 1.25rem;
+      margin: 0.35rem 0 0;
+      font-size: 0.85rem;
+      color: var(--danger);
+    }
+    .link-cambiar {
+      margin-top: 0.4rem;
+      font-size: 0.82rem;
+      color: var(--accent);
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      text-decoration: underline;
+      font-family: inherit;
+    }
+    .link-cambiar:hover {
+      color: #6eb0ff;
+    }
+    .nombre-row-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.35rem;
+    }
+    .nombre-row-head label {
+      margin-bottom: 0.25rem;
+    }
   </style>
 </head>
 <body>
+  <div id="nombre-gate" class="nombre-gate" role="dialog" aria-modal="true" aria-labelledby="nombre-gate-title">
+    <div class="nombre-gate-dialog">
+      <h2 id="nombre-gate-title">¿Quién sos?</h2>
+      <p>Poné tu nombre así el equipo sabe quién agrega o marca cada cosa en el pedido.</p>
+      <label for="nombre-inicial">Nombre o apodo</label>
+      <input type="text" id="nombre-inicial" placeholder="Ej. Ana, Luis, depósito 2…" autocomplete="name" maxlength="80" autofocus />
+      <p id="nombre-gate-error" class="nombre-gate-error" role="alert"></p>
+      <button type="button" class="btn primary" id="btn-nombre-continuar" style="width: 100%; margin-top: 0.25rem;">
+        Continuar
+      </button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var g = document.getElementById('nombre-gate');
+      var a = document.getElementById('app');
+      try {
+        var n = localStorage.getItem('pedidos_rosendo_nombre');
+        if (n && String(n).trim()) {
+          g.hidden = true;
+          a.hidden = false;
+        } else {
+          g.hidden = false;
+          a.hidden = true;
+        }
+      } catch (e) {
+        a.hidden = true;
+      }
+    })();
+  </script>
+
   <div class="wrap">
     <header>
-      <h1>Pedidos por proveedor</h1>
-      <p>Lista compartida (sincronizada cada pocos segundos) · <a href="/">Volver a la app</a></p>
+      <h1>Pedido del equipo</h1>
+      <p>Acá editan todos el mismo pedido del día (no hace falta recompilar la app). <a href="/">Volver a depósito</a></p>
     </header>
 
     <div id="setup-banner" class="banner" hidden>
@@ -199,16 +331,35 @@
       <p id="setup-detail" style="margin: 0 0 0.75rem; color: var(--muted); font-size: 0.9rem;"></p>
       <ol>
         <li>En <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> → tu proyecto → <strong>Storage</strong> → creá o conectá <strong>Postgres</strong> (suele ser <strong>Neon</strong>, con capa gratuita).</li>
-        <li>En el SQL Editor de esa base, ejecutá el contenido de <code>vercel-postgres-schema.sql</code>.</li>
+        <li>En el SQL Editor de esa base, ejecutá <code>vercel-postgres-schema.sql</code>. Si la tabla ya existía, también <code>vercel-postgres-migration-fecha-pedido.sql</code>.</li>
         <li>Hacé un nuevo deploy (push a GitHub o “Redeploy”). La API vive en <code>/api/pedidos</code>; no hace falta ningún archivo de claves en el front.</li>
       </ol>
     </div>
 
-    <div id="app">
+    <div id="app" hidden>
+      <div class="pedido-dia">
+        <h2>Pedido del día</h2>
+        <p id="literal-fecha" class="literal-fecha" aria-live="polite"></p>
+        <div class="fecha-row">
+          <div>
+            <label for="fecha-pedido">Fecha del pedido (cambiala para ver otro día)</label>
+            <input type="date" id="fecha-pedido" />
+          </div>
+          <button type="button" class="btn" id="btn-hoy">Hoy</button>
+        </div>
+        <p class="hint" style="margin-top: 0.75rem; margin-bottom: 0;">
+          Los ítems que agregues quedan guardados para <strong>esa fecha</strong>. El resumen por proveedor de la app Flutter es otra pantalla (solo lectura desde el catálogo).
+        </p>
+      </div>
+
       <div class="row">
         <div>
-          <label for="nombre">Tu nombre (para que el equipo sepa quién marcó)</label>
-          <input type="text" id="nombre" placeholder="Ej. Ana, Luis…" autocomplete="name" />
+          <div class="nombre-row-head">
+            <label for="nombre">Tu nombre en el pedido</label>
+            <button type="button" class="link-cambiar" id="btn-cambiar-nombre">Cambiar persona</button>
+          </div>
+          <input type="text" id="nombre" placeholder="Ej. Ana, Luis…" autocomplete="name" maxlength="80" />
+          <p class="hint" style="margin-top: 0.35rem;">Se guarda en este dispositivo. Usá «Cambiar persona» si entra otra persona al mismo celular o PC.</p>
         </div>
       </div>
 

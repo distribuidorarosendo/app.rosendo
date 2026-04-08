@@ -10,11 +10,10 @@ En el iPhone: subí esta carpeta al hosting y abrí la URL en Safari; podés "A�
 
 Nota: en web el catálogo viene del JSON embebido; los cambios en "Productos" no se guardan entre sesiones como en la app Android.
 
-Pedidos colaborativos (por proveedor, sincronizados cada pocos segundos):
-  Abrí en el navegador: /pedidos.html
-  Backend: funciones en /api/pedidos (Vercel) + Postgres gratuito en el mismo Vercel (Storage → Postgres).
-  Ejecutá vercel-postgres-schema.sql en la consola SQL de esa base; hacé deploy con package.json (npm install en Vercel).
-  No hace falta Supabase ni otro servicio aparte: GitHub + Vercel alcanzan.
+Pedidos colaborativos — vista "Pedido del día" (por fecha, varias personas editan):
+  URL: /pedidos.html
+  API: /api/pedidos + Postgres (Neon) en Vercel. Si la tabla ya existía: corré vercel-postgres-migration-fecha-pedido.sql.
+  El resumen por proveedor de la app Flutter es independiente; para editar el pedido del equipo usá esta página o enlazala desde Flutter.
 
 Para regenerar esta carpeta desde el proyecto Flutter:
   flutter build web --release

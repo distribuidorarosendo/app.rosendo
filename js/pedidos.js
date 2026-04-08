@@ -6,7 +6,15 @@ const LS_NOMBRE = 'pedidos_rosendo_nombre';
 const el = {
   setup: document.getElementById('setup-banner'),
   setupDetail: document.getElementById('setup-detail'),
+  nombreGate: document.getElementById('nombre-gate'),
+  nombreInicial: document.getElementById('nombre-inicial'),
+  nombreGateError: document.getElementById('nombre-gate-error'),
+  btnNombreContinuar: document.getElementById('btn-nombre-continuar'),
+  btnCambiarNombre: document.getElementById('btn-cambiar-nombre'),
   app: document.getElementById('app'),
+  fechaPedido: document.getElementById('fecha-pedido'),
+  literalFecha: document.getElementById('literal-fecha'),
+  btnHoy: document.getElementById('btn-hoy'),
   nombre: document.getElementById('nombre'),
   proveedorFilter: document.getElementById('proveedor-filter'),
   proveedorNuevo: document.getElementById('proveedor-nuevo'),
@@ -20,6 +28,38 @@ const el = {
 let proveedoresCache = [];
 let itemsCache = [];
 let pollTimer = null;
+
+function fechaLocalHoy() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+function fechaSeleccionada() {
+  const v = (el.fechaPedido && el.fechaPedido.value) || '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return v;
+  return fechaLocalHoy();
+}
+
+function updateLiteralFecha() {
+  if (!el.literalFecha) return;
+  const raw = fechaSeleccionada();
+  const [y, m, d] = raw.split('-').map(Number);
+  const date = new Date(y, m - 1, d);
+  el.literalFecha.textContent = date.toLocaleDateString('es-AR', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+  document.title = `Pedido — ${date.toLocaleDateString('es-AR')} · Rosendo`;
+}
+
+function apiUrlLista() {
+  return `${API}?fecha=${encodeURIComponent(fechaSeleccionada())}`;
+}
 
 async function fetchProveedoresDesdeCatalogo() {
   try {
@@ -74,10 +114,65 @@ function escapeAttr(s) {
   return escapeHtml(s).replace(/'/g, '&#39;');
 }
 
+function nombreGuardadoValido() {
+  const s = localStorage.getItem(LS_NOMBRE);
+  return Boolean(s && s.trim().length > 0);
+}
+
 function nombreQuien() {
-  const n = (el.nombre.value || '').trim();
-  if (n) localStorage.setItem(LS_NOMBRE, n);
+  let n = (el.nombre.value || '').trim();
+  if (!n) n = (localStorage.getItem(LS_NOMBRE) || '').trim();
+  if (n) {
+    el.nombre.value = n;
+    localStorage.setItem(LS_NOMBRE, n);
+  }
   return n || 'Sin nombre';
+}
+
+function openNombreGate() {
+  if (el.nombreGate) el.nombreGate.hidden = false;
+  el.app.hidden = true;
+  el.setup.hidden = true;
+  if (pollTimer) {
+    clearInterval(pollTimer);
+    pollTimer = null;
+  }
+  if (el.nombreInicial) {
+    el.nombreInicial.value = '';
+    el.nombreInicial.focus();
+  }
+  if (el.nombreGateError) el.nombreGateError.textContent = '';
+}
+
+function closeNombreGate() {
+  if (el.nombreGate) el.nombreGate.hidden = true;
+  el.app.hidden = false;
+}
+
+async function onNombreContinuar() {
+  const n = (el.nombreInicial && el.nombreInicial.value ? el.nombreInicial.value : '').trim();
+  if (!n) {
+    if (el.nombreGateError) el.nombreGateError.textContent = 'Escribí tu nombre para continuar.';
+    return;
+  }
+  if (el.nombreGateError) el.nombreGateError.textContent = '';
+  localStorage.setItem(LS_NOMBRE, n);
+  el.nombre.value = n;
+  closeNombreGate();
+  await startAppData();
+}
+
+async function startAppData() {
+  if (pollTimer) {
+    clearInterval(pollTimer);
+    pollTimer = null;
+  }
+  el.fechaPedido.value = fechaLocalHoy();
+  updateLiteralFecha();
+  const catalog = await fetchProveedoresDesdeCatalogo();
+  fillProveedorSelects(catalog);
+  await loadItems();
+  startPolling();
 }
 
 function showSetup(message) {
@@ -99,8 +194,8 @@ async function loadItems() {
   el.status.textContent = 'Sincronizando…';
   let r;
   try {
-    r = await fetch(API);
-  } catch (e) {
+    r = await fetch(apiUrlLista());
+  } catch {
     el.status.textContent = 'No hay conexión con el servidor (¿abrís solo el HTML sin Vercel?)';
     showSetup(
       'Esta página necesita el backend en /api/pedidos (desplegá en Vercel o usá: vercel dev).'
@@ -121,6 +216,11 @@ async function loadItems() {
     return;
   }
 
+  if (r.status === 400 && data.error) {
+    showSetup(data.error);
+    return;
+  }
+
   if (!r.ok) {
     el.status.textContent = data.message || data.error || 'Error al cargar';
     if (r.status >= 500) showSetup(data.message || 'Error del servidor.');
@@ -136,7 +236,7 @@ async function loadItems() {
   itemsCache = data;
   mergeProveedoresFromItems();
   renderLista();
-  el.status.textContent = `Conectado · actualización cada ${POLL_MS / 1000}s`;
+  el.status.textContent = `Pedido del ${fechaSeleccionada()} · actualización cada ${POLL_MS / 1000}s`;
 }
 
 function proveedorFiltroActual() {
@@ -150,7 +250,7 @@ function renderLista() {
 
   if (rows.length === 0) {
     el.lista.innerHTML =
-      '<p class="empty">No hay ítems. Agregá uno arriba o cambiá el filtro de proveedor.</p>';
+      '<p class="empty">No hay ítems para esta fecha. Agregá productos arriba; el resto del equipo los verá en segundos.</p>';
     return;
   }
 
@@ -265,6 +365,7 @@ async function agregarItem() {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
+      fecha_pedido: fechaSeleccionada(),
       proveedor: prov,
       producto,
       quien: nombreQuien(),
@@ -282,14 +383,36 @@ async function agregarItem() {
 function startPolling() {
   if (pollTimer) clearInterval(pollTimer);
   pollTimer = setInterval(() => {
-    if (el.app.hidden) return;
+    if (el.app.hidden || (el.nombreGate && !el.nombreGate.hidden)) return;
     loadItems();
   }, POLL_MS);
 }
 
 async function init() {
-  const saved = localStorage.getItem(LS_NOMBRE);
-  if (saved) el.nombre.value = saved;
+  el.btnNombreContinuar.addEventListener('click', () => onNombreContinuar());
+  el.nombreInicial.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      onNombreContinuar();
+    }
+  });
+
+  el.btnCambiarNombre.addEventListener('click', () => {
+    if (!confirm('¿Cambiar de persona? Se va a pedir el nombre de nuevo.')) return;
+    localStorage.removeItem(LS_NOMBRE);
+    el.nombre.value = '';
+    openNombreGate();
+  });
+
+  el.fechaPedido.addEventListener('change', () => {
+    updateLiteralFecha();
+    loadItems();
+  });
+  el.btnHoy.addEventListener('click', () => {
+    el.fechaPedido.value = fechaLocalHoy();
+    updateLiteralFecha();
+    loadItems();
+  });
 
   el.nombre.addEventListener('change', () => nombreQuien());
   el.proveedorFilter.addEventListener('change', renderLista);
@@ -300,10 +423,13 @@ async function init() {
     mergeProveedoresFromItems();
   });
 
-  const catalog = await fetchProveedoresDesdeCatalogo();
-  fillProveedorSelects(catalog);
-  await loadItems();
-  startPolling();
+  if (nombreGuardadoValido()) {
+    el.nombre.value = localStorage.getItem(LS_NOMBRE).trim();
+    closeNombreGate();
+    await startAppData();
+  } else {
+    openNombreGate();
+  }
 }
 
 init();
